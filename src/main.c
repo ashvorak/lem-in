@@ -32,7 +32,7 @@ static t_farm	*new_farm(int ants)
 		return (NULL);
 	farm->ants = ants;
 	farm->head_room = NULL;
-	farm->connects = NULL;
+	farm->connects = 0;
 	farm->start_id = -1;
 	farm->end_id = -1;
 	return (farm);
@@ -56,5 +56,16 @@ int	main(int ac, char **av)
 	}
 	else
 		ft_usage();
+	int i = 0;
+	int j = 0;
+	int size = farm_size(farm);
+	while (i < size)
+	{
+		j = 0;
+		while (j < size)
+			ft_printf("%d ", farm->connects[i][j++]);
+		ft_printf("\n");
+		i++;
+	}
 	return (0);
 }

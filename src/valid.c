@@ -73,11 +73,11 @@ int	is_connection(char *line, t_farm *farm)
 	char	**arr;
 	
 	arr = ft_strsplit(line, '-');
-	if (ft_array_size(arr) != 3)
+	if (ft_array_size(arr) != 2)
 		return (0);
-	else if (!ft_strcmp(arr[0], arr[2]))
+	else if (!ft_strcmp(arr[0], arr[1]))
 		return (0);
-	else if (!is_name(arr[0], farm) || !is_name(arr[2], farm))
+	else if (!is_name(arr[0], farm) || !is_name(arr[1], farm))
 		return (0);	
 	return (1);
 }

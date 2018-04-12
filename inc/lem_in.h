@@ -40,7 +40,7 @@ typedef struct	s_farm
 {
 	int		ants;
 	t_room	*head_room;
-	char	**connects;
+	int		**connects;
 	int		start_id;
 	int		end_id;
 	
@@ -56,5 +56,7 @@ int		is_connection(char *line, t_farm *farm);
 
 void	read_rooms(int fd, t_farm *farm, char **line);
 void	read_connections(int fd, t_farm *farm, char **line);
+
+int		farm_size(t_farm *farm);
 
 #endif
