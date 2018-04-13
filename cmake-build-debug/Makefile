@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/aleksej/Documents/UNIT/lem-in
+CMAKE_SOURCE_DIR = /Users/oshvorak/lem-in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/aleksej/Documents/UNIT/lem-in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/oshvorak/lem-in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aleksej/Documents/UNIT/lem-in/cmake-build-debug/CMakeFiles /Users/aleksej/Documents/UNIT/lem-in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles /Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/aleksej/Documents/UNIT/lem-in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2499,32 +2499,59 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/reader.o: src/reader.c.o
+src/read_connections.o: src/read_connections.c.o
 
-.PHONY : src/reader.o
+.PHONY : src/read_connections.o
 
 # target to build an object file
-src/reader.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/reader.c.o
-.PHONY : src/reader.c.o
+src/read_connections.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/read_connections.c.o
+.PHONY : src/read_connections.c.o
 
-src/reader.i: src/reader.c.i
+src/read_connections.i: src/read_connections.c.i
 
-.PHONY : src/reader.i
+.PHONY : src/read_connections.i
 
 # target to preprocess a source file
-src/reader.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/reader.c.i
-.PHONY : src/reader.c.i
+src/read_connections.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/read_connections.c.i
+.PHONY : src/read_connections.c.i
 
-src/reader.s: src/reader.c.s
+src/read_connections.s: src/read_connections.c.s
 
-.PHONY : src/reader.s
+.PHONY : src/read_connections.s
 
 # target to generate assembly for a file
-src/reader.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/reader.c.s
-.PHONY : src/reader.c.s
+src/read_connections.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/read_connections.c.s
+.PHONY : src/read_connections.c.s
+
+src/read_rooms.o: src/read_rooms.c.o
+
+.PHONY : src/read_rooms.o
+
+# target to build an object file
+src/read_rooms.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/read_rooms.c.o
+.PHONY : src/read_rooms.c.o
+
+src/read_rooms.i: src/read_rooms.c.i
+
+.PHONY : src/read_rooms.i
+
+# target to preprocess a source file
+src/read_rooms.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/read_rooms.c.i
+.PHONY : src/read_rooms.c.i
+
+src/read_rooms.s: src/read_rooms.c.s
+
+.PHONY : src/read_rooms.s
+
+# target to generate assembly for a file
+src/read_rooms.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/read_rooms.c.s
+.PHONY : src/read_rooms.c.s
 
 src/valid.o: src/valid.c.o
 
@@ -2826,9 +2853,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/reader.o"
-	@echo "... src/reader.i"
-	@echo "... src/reader.s"
+	@echo "... src/read_connections.o"
+	@echo "... src/read_connections.i"
+	@echo "... src/read_connections.s"
+	@echo "... src/read_rooms.o"
+	@echo "... src/read_rooms.i"
+	@echo "... src/read_rooms.s"
 	@echo "... src/valid.o"
 	@echo "... src/valid.i"
 	@echo "... src/valid.s"

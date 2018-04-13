@@ -12,7 +12,7 @@
 
 #include "../inc/lem_in.h"
 
-void	ft_error(void)
+void			ft_error(void)
 {
 	ft_printf("Error\n");
 	exit(1);
@@ -38,7 +38,7 @@ static t_farm	*new_farm(int ants)
 	return (farm);
 }
 
-int	main(int ac, char **av)
+int				main(int ac, char **av)
 {
 	int		fd;
 	char	*line;

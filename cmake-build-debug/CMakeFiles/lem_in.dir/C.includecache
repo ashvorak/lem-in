@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/aleksej/Documents/UNIT/lem-in/inc/lem_in.h
+/Users/oshvorak/lem-in/inc/lem_in.h
 fcntl.h
 -
 stdlib.h
@@ -14,117 +14,117 @@ stdlib.h
 errno.h
 -
 ../lib/libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 ../lib/get_next_line/get_next_line.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/get_next_line/get_next_line.h
+/Users/oshvorak/lem-in/lib/get_next_line/get_next_line.h
 ../lib/ft_printf/inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_array_size.c
+/Users/oshvorak/lem-in/lib/ft_array_size.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_atoi.c
+/Users/oshvorak/lem-in/lib/ft_atoi.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_atoi_base.c
+/Users/oshvorak/lem-in/lib/ft_atoi_base.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_bzero.c
+/Users/oshvorak/lem-in/lib/ft_bzero.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_charreplace.c
+/Users/oshvorak/lem-in/lib/ft_charreplace.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_factorial.c
+/Users/oshvorak/lem-in/lib/ft_factorial.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_free_arr.c
+/Users/oshvorak/lem-in/lib/ft_free_arr.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_isalnum.c
+/Users/oshvorak/lem-in/lib/ft_isalnum.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_isalpha.c
+/Users/oshvorak/lem-in/lib/ft_isalpha.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_isascii.c
+/Users/oshvorak/lem-in/lib/ft_isascii.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_isdigit.c
+/Users/oshvorak/lem-in/lib/ft_isdigit.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_isprint.c
+/Users/oshvorak/lem-in/lib/ft_isprint.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_itoa.c
+/Users/oshvorak/lem-in/lib/ft_itoa.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_listsize.c
+/Users/oshvorak/lem-in/lib/ft_listsize.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_lstadd.c
+/Users/oshvorak/lem-in/lib/ft_lstadd.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_lstdel.c
+/Users/oshvorak/lem-in/lib/ft_lstdel.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_lstdelone.c
+/Users/oshvorak/lem-in/lib/ft_lstdelone.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_lstiter.c
+/Users/oshvorak/lem-in/lib/ft_lstiter.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_lstmap.c
+/Users/oshvorak/lem-in/lib/ft_lstmap.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_lstnew.c
+/Users/oshvorak/lem-in/lib/ft_lstnew.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_memalloc.c
+/Users/oshvorak/lem-in/lib/ft_memalloc.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_memccpy.c
+/Users/oshvorak/lem-in/lib/ft_memccpy.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_memchr.c
+/Users/oshvorak/lem-in/lib/ft_memchr.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_memcmp.c
+/Users/oshvorak/lem-in/lib/ft_memcmp.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_memcpy.c
+/Users/oshvorak/lem-in/lib/ft_memcpy.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_memdel.c
+/Users/oshvorak/lem-in/lib/ft_memdel.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_memmove.c
+/Users/oshvorak/lem-in/lib/ft_memmove.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_memset.c
+/Users/oshvorak/lem-in/lib/ft_memset.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 stdarg.h
 -
 stdlib.h
@@ -132,235 +132,235 @@ stdlib.h
 wchar.h
 -
 ../../libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/active_bits.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/active_bits.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/convert_base.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/convert_base.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/convert_float.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/convert_float.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/convert_int.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/convert_int.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/ft_printf.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/ft_printf.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/ft_putwchar.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/ft_putwchar.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/ft_realloc.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/ft_realloc.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/handle_char.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/handle_char.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/handle_float.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/handle_float.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/handle_n.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/handle_n.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/handle_num.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/handle_num.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/handle_qualifier.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/handle_qualifier.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/handle_str.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/handle_str.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/handle_value.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/handle_value.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/handle_wchar.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/handle_wchar.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/handle_wstr.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/handle_wstr.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/is_type.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/is_type.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/make_colors.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/make_colors.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/src/size_char.c
+/Users/oshvorak/lem-in/lib/ft_printf/src/size_char.c
 ../inc/ft_printf.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_printf/inc/ft_printf.h
+/Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_putchar.c
+/Users/oshvorak/lem-in/lib/ft_putchar.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_putchar_fd.c
+/Users/oshvorak/lem-in/lib/ft_putchar_fd.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_putendl.c
+/Users/oshvorak/lem-in/lib/ft_putendl.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_putendl_fd.c
+/Users/oshvorak/lem-in/lib/ft_putendl_fd.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_putnbr.c
+/Users/oshvorak/lem-in/lib/ft_putnbr.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_putnbr_fd.c
+/Users/oshvorak/lem-in/lib/ft_putnbr_fd.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_putstr.c
+/Users/oshvorak/lem-in/lib/ft_putstr.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_putstr_fd.c
+/Users/oshvorak/lem-in/lib/ft_putstr_fd.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_sqrt.c
+/Users/oshvorak/lem-in/lib/ft_sqrt.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strcapitalize.c
+/Users/oshvorak/lem-in/lib/ft_strcapitalize.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strcat.c
+/Users/oshvorak/lem-in/lib/ft_strcat.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strchr.c
+/Users/oshvorak/lem-in/lib/ft_strchr.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strclr.c
+/Users/oshvorak/lem-in/lib/ft_strclr.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strcmp.c
+/Users/oshvorak/lem-in/lib/ft_strcmp.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strcpy.c
+/Users/oshvorak/lem-in/lib/ft_strcpy.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strdel.c
+/Users/oshvorak/lem-in/lib/ft_strdel.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strdup.c
+/Users/oshvorak/lem-in/lib/ft_strdup.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strequ.c
+/Users/oshvorak/lem-in/lib/ft_strequ.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_striter.c
+/Users/oshvorak/lem-in/lib/ft_striter.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_striteri.c
+/Users/oshvorak/lem-in/lib/ft_striteri.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strjoin.c
+/Users/oshvorak/lem-in/lib/ft_strjoin.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strlcat.c
+/Users/oshvorak/lem-in/lib/ft_strlcat.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strlen.c
+/Users/oshvorak/lem-in/lib/ft_strlen.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strmap.c
+/Users/oshvorak/lem-in/lib/ft_strmap.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strmapi.c
+/Users/oshvorak/lem-in/lib/ft_strmapi.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strncat.c
+/Users/oshvorak/lem-in/lib/ft_strncat.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strncmp.c
+/Users/oshvorak/lem-in/lib/ft_strncmp.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strncpy.c
+/Users/oshvorak/lem-in/lib/ft_strncpy.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strnequ.c
+/Users/oshvorak/lem-in/lib/ft_strnequ.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strnew.c
+/Users/oshvorak/lem-in/lib/ft_strnew.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strnstr.c
+/Users/oshvorak/lem-in/lib/ft_strnstr.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strrchr.c
+/Users/oshvorak/lem-in/lib/ft_strrchr.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strsplit.c
+/Users/oshvorak/lem-in/lib/ft_strsplit.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strstr.c
+/Users/oshvorak/lem-in/lib/ft_strstr.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strsub.c
+/Users/oshvorak/lem-in/lib/ft_strsub.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_strtrim.c
+/Users/oshvorak/lem-in/lib/ft_strtrim.c
 libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_swap.c
+/Users/oshvorak/lem-in/lib/ft_swap.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_tolower.c
+/Users/oshvorak/lem-in/lib/ft_tolower.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/ft_toupper.c
+/Users/oshvorak/lem-in/lib/ft_toupper.c
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/get_next_line/get_next_line.c
+/Users/oshvorak/lem-in/lib/get_next_line/get_next_line.c
 get_next_line.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/get_next_line/get_next_line.h
+/Users/oshvorak/lem-in/lib/get_next_line/get_next_line.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/get_next_line/get_next_line.h
+/Users/oshvorak/lem-in/lib/get_next_line/get_next_line.h
 fcntl.h
 -
 stdlib.h
 -
 ../libft.h
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 
-/Users/aleksej/Documents/UNIT/lem-in/lib/libft.h
+/Users/oshvorak/lem-in/lib/libft.h
 unistd.h
 -
 stdlib.h
@@ -368,15 +368,19 @@ stdlib.h
 string.h
 -
 
-/Users/aleksej/Documents/UNIT/lem-in/src/main.c
+/Users/oshvorak/lem-in/src/main.c
 ../inc/lem_in.h
-/Users/aleksej/Documents/UNIT/lem-in/inc/lem_in.h
+/Users/oshvorak/lem-in/inc/lem_in.h
 
-/Users/aleksej/Documents/UNIT/lem-in/src/reader.c
+/Users/oshvorak/lem-in/src/read_connections.c
 ../inc/lem_in.h
-/Users/aleksej/Documents/UNIT/lem-in/inc/lem_in.h
+/Users/oshvorak/lem-in/inc/lem_in.h
 
-/Users/aleksej/Documents/UNIT/lem-in/src/valid.c
+/Users/oshvorak/lem-in/src/read_rooms.c
 ../inc/lem_in.h
-/Users/aleksej/Documents/UNIT/lem-in/inc/lem_in.h
+/Users/oshvorak/lem-in/inc/lem_in.h
+
+/Users/oshvorak/lem-in/src/valid.c
+../inc/lem_in.h
+/Users/oshvorak/lem-in/inc/lem_in.h
 

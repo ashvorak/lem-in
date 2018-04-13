@@ -87,8 +87,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/lib/ft_tolower.c.o"
   "CMakeFiles/lem_in.dir/lib/ft_toupper.c.o"
   "CMakeFiles/lem_in.dir/src/main.c.o"
-  "CMakeFiles/lem_in.dir/src/reader.c.o"
+  "CMakeFiles/lem_in.dir/src/read_rooms.c.o"
   "CMakeFiles/lem_in.dir/src/valid.c.o"
+  "CMakeFiles/lem_in.dir/src/read_connections.c.o"
   "lem_in.pdb"
   "lem_in"
 )

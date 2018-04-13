@@ -96,5 +96,5 @@ add_executable(lem_in
         lib/ft_toupper.c
         lib/libft.h
         src/main.c
-        src/reader.c
-        src/valid.c)
+        src/read_rooms.c
+        src/valid.c src/read_connections.c)

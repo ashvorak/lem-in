@@ -275,11 +275,17 @@ CMakeFiles/lem_in.dir/src/main.c.o: ../lib/get_next_line/get_next_line.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../lib/libft.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../src/main.c
 
-CMakeFiles/lem_in.dir/src/reader.c.o: ../inc/lem_in.h
-CMakeFiles/lem_in.dir/src/reader.c.o: ../lib/ft_printf/inc/ft_printf.h
-CMakeFiles/lem_in.dir/src/reader.c.o: ../lib/get_next_line/get_next_line.h
-CMakeFiles/lem_in.dir/src/reader.c.o: ../lib/libft.h
-CMakeFiles/lem_in.dir/src/reader.c.o: ../src/reader.c
+CMakeFiles/lem_in.dir/src/read_connections.c.o: ../inc/lem_in.h
+CMakeFiles/lem_in.dir/src/read_connections.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/lem_in.dir/src/read_connections.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/lem_in.dir/src/read_connections.c.o: ../lib/libft.h
+CMakeFiles/lem_in.dir/src/read_connections.c.o: ../src/read_connections.c
+
+CMakeFiles/lem_in.dir/src/read_rooms.c.o: ../inc/lem_in.h
+CMakeFiles/lem_in.dir/src/read_rooms.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/lem_in.dir/src/read_rooms.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/lem_in.dir/src/read_rooms.c.o: ../lib/libft.h
+CMakeFiles/lem_in.dir/src/read_rooms.c.o: ../src/read_rooms.c
 
 CMakeFiles/lem_in.dir/src/valid.c.o: ../inc/lem_in.h
 CMakeFiles/lem_in.dir/src/valid.c.o: ../lib/ft_printf/inc/ft_printf.h
