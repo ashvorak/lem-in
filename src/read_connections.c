@@ -31,7 +31,7 @@ int	 ret_id(t_farm *farm, char *name)
 	return (id);
 }
 
-static char **ret_connects(t_farm *farm)
+int **ret_matrix(t_farm *farm)
 {
 	int i;
 	int j;
@@ -61,7 +61,7 @@ void	read_connections(int fd, t_farm *farm, char **line)
 	int		**connects;
 	char 	**arr;
 
-	connects = ret_connects(farm);
+	connects = ret_matrix(farm);
 	do
 	{
 		if (is_connection(*line, farm) || is_command(*line))

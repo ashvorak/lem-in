@@ -34,6 +34,8 @@ int	is_room(char *line)
 	{
 		if (!is_integer(arr[i]) && i != 0)
 			return (0);
+		else if (i == 0 && arr[i][0] == 'L')
+			return (0);
 		i++;
 	}
 	ft_free_arr(arr);
@@ -67,7 +69,7 @@ int	is_name(char *str, t_farm *farm)
 	}
 	return (0);
 }
-
+//same coord!!!
 int	is_connection(char *line, t_farm *farm)
 {
 	char	**arr;

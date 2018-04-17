@@ -90,6 +90,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/read_rooms.c.o"
   "CMakeFiles/lem_in.dir/src/valid.c.o"
   "CMakeFiles/lem_in.dir/src/read_connections.c.o"
+  "CMakeFiles/lem_in.dir/src/wave_tracing.c.o"
   "lem_in.pdb"
   "lem_in"
 )

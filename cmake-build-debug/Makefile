@@ -2580,6 +2580,33 @@ src/valid.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/valid.c.s
 .PHONY : src/valid.c.s
 
+src/wave_tracing.o: src/wave_tracing.c.o
+
+.PHONY : src/wave_tracing.o
+
+# target to build an object file
+src/wave_tracing.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/wave_tracing.c.o
+.PHONY : src/wave_tracing.c.o
+
+src/wave_tracing.i: src/wave_tracing.c.i
+
+.PHONY : src/wave_tracing.i
+
+# target to preprocess a source file
+src/wave_tracing.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/wave_tracing.c.i
+.PHONY : src/wave_tracing.c.i
+
+src/wave_tracing.s: src/wave_tracing.c.s
+
+.PHONY : src/wave_tracing.s
+
+# target to generate assembly for a file
+src/wave_tracing.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/wave_tracing.c.s
+.PHONY : src/wave_tracing.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2862,6 +2889,9 @@ help:
 	@echo "... src/valid.o"
 	@echo "... src/valid.i"
 	@echo "... src/valid.s"
+	@echo "... src/wave_tracing.o"
+	@echo "... src/wave_tracing.i"
+	@echo "... src/wave_tracing.s"
 .PHONY : help
 
 

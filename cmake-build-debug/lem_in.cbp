@@ -365,6 +365,9 @@
 		<Unit filename="/Users/oshvorak/lem-in/src/valid.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/lem-in/src/wave_tracing.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/lem-in/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -32,7 +32,8 @@ static t_farm	*new_farm(int ants)
 		return (NULL);
 	farm->ants = ants;
 	farm->head_room = NULL;
-	farm->connects = 0;
+	farm->connects = NULL;
+	farm->paths = NULL;
 	farm->start_id = -1;
 	farm->end_id = -1;
 	return (farm);
@@ -49,7 +50,7 @@ int				main(int ac, char **av)
 		fd = open(av[1], O_RDONLY);
 		get_next_line(fd, &line) == -1 ? ft_error() : 0;
 		!is_integer(line) ? ft_error() : 0;
-		farm = new_farm(ft_atoi(line));		
+		farm = new_farm(ft_atoi(line));
 		ft_strdel(&line);
 		read_rooms(fd, farm, &line);
 		read_connections(fd, farm, &line);

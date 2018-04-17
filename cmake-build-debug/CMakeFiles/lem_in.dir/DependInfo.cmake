@@ -95,6 +95,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/oshvorak/lem-in/src/read_connections.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_connections.c.o"
   "/Users/oshvorak/lem-in/src/read_rooms.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_rooms.c.o"
   "/Users/oshvorak/lem-in/src/valid.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/valid.c.o"
+  "/Users/oshvorak/lem-in/src/wave_tracing.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/wave_tracing.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

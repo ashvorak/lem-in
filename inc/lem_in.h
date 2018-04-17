@@ -41,6 +41,7 @@ typedef struct	s_farm
 	int		ants;
 	t_room	*head_room;
 	int		**connects;
+	int 	**paths;
 	int		start_id;
 	int		end_id;
 	
@@ -56,6 +57,8 @@ int		is_connection(char *line, t_farm *farm);
 
 void	read_rooms(int fd, t_farm *farm, char **line);
 void	read_connections(int fd, t_farm *farm, char **line);
+int		farm_size(t_farm *farm);
+int		**ret_matrix(t_farm *farm);
 
 int		farm_size(t_farm *farm);
 
