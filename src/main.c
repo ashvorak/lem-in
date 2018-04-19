@@ -54,6 +54,7 @@ int				main(int ac, char **av)
 		ft_strdel(&line);
 		read_rooms(fd, farm, &line);
 		read_connections(fd, farm, &line);
+		wave_tracing(farm);
 	}
 	else
 		ft_usage();
@@ -65,6 +66,17 @@ int				main(int ac, char **av)
 		j = 0;
 		while (j < size)
 			ft_printf("%d ", farm->connects[i][j++]);
+		ft_printf("\n");
+		i++;
+	}
+	ft_printf("\n");
+	ft_printf("\n");
+	i = 0;
+	while (i < size)
+	{
+		j = 0;
+		while (j < size)
+			ft_printf("%d ", farm->paths[i][j++]);
 		ft_printf("\n");
 		i++;
 	}

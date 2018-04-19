@@ -60,6 +60,8 @@ void	read_connections(int fd, t_farm *farm, char **line);
 int		farm_size(t_farm *farm);
 int		**ret_matrix(t_farm *farm);
 
+void	wave_tracing(t_farm *farm);
+
 int		farm_size(t_farm *farm);
 
 #endif
