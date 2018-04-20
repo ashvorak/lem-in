@@ -293,3 +293,9 @@ CMakeFiles/lem_in.dir/src/valid.c.o: ../lib/get_next_line/get_next_line.h
 CMakeFiles/lem_in.dir/src/valid.c.o: ../lib/libft.h
 CMakeFiles/lem_in.dir/src/valid.c.o: ../src/valid.c
 
+CMakeFiles/lem_in.dir/src/wave_tracing.c.o: ../inc/lem_in.h
+CMakeFiles/lem_in.dir/src/wave_tracing.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/lem_in.dir/src/wave_tracing.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/lem_in.dir/src/wave_tracing.c.o: ../lib/libft.h
+CMakeFiles/lem_in.dir/src/wave_tracing.c.o: ../src/wave_tracing.c
+

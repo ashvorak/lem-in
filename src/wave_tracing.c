@@ -5,6 +5,7 @@ static int fill_path(t_farm *farm, int wt, int size)
 	int i;
 	int j;
 	int tmp;
+	int p;
 	int bool;
 
 	i = 0;
@@ -17,18 +18,20 @@ static int fill_path(t_farm *farm, int wt, int size)
 			if (farm->paths[i][j] == wt - 1)
 			{
 				tmp = j;
-				j = 0;
-				bool = 1;
-				while (j < size)
+				p = 0;
+				while (p < size)
 				{
-					if (farm->connects[tmp][j] == 1)
+					if (farm->connects[tmp][p] == 1)
 					{
-						farm->paths[tmp][j] == 0 ? farm->paths[tmp][j] = wt : 0;//если вт меньше то ок
-						farm->paths[j][tmp] == 0 ? farm->paths[j][tmp] = wt : 0;
+						if (farm->paths[tmp][p] == 0)
+						{
+							farm->paths[tmp][p] = wt;
+							farm->paths[p][tmp] = wt;
+							bool = 1;
+						}
 					}
-					j++;
+					p++;
 				}
-				break;
 			}
 			j++;
 		}
@@ -56,11 +59,9 @@ void wave_tracing(t_farm *farm)
 		}
 		i++;
 	}
-	ft_printf("\n");
-	ft_printf("\n");
 	wt = 2;
 	bool = 1;
-	while (bool && wt < 11)
+	while (bool)
 	{
 		bool = fill_path(farm, wt, size);
 		wt++;
