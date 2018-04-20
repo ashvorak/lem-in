@@ -34,6 +34,7 @@ static t_farm	*new_farm(int ants)
 	farm->head_room = NULL;
 	farm->connects = NULL;
 	farm->paths = NULL;
+	farm->main_path = NULL;
 	farm->start_id = -1;
 	farm->end_id = -1;
 	return (farm);

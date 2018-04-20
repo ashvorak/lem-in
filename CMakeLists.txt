@@ -97,4 +97,4 @@ add_executable(lem_in
         lib/libft.h
         src/main.c
         src/read_rooms.c
-        src/valid.c src/read_connections.c src/wave_tracing.c)
+        src/valid.c src/read_connections.c src/wave_tracing.c src/handle_ways.c)

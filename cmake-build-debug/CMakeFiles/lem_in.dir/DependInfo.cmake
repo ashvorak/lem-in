@@ -91,6 +91,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/oshvorak/lem-in/lib/ft_tolower.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/lib/ft_tolower.c.o"
   "/Users/oshvorak/lem-in/lib/ft_toupper.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/lib/ft_toupper.c.o"
   "/Users/oshvorak/lem-in/lib/get_next_line/get_next_line.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.o"
+  "/Users/oshvorak/lem-in/src/handle_ways.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/handle_ways.c.o"
   "/Users/oshvorak/lem-in/src/main.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o"
   "/Users/oshvorak/lem-in/src/read_connections.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_connections.c.o"
   "/Users/oshvorak/lem-in/src/read_rooms.c" "/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_rooms.c.o"

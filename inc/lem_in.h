@@ -33,8 +33,15 @@ typedef struct	s_room
 	char			*name;
 	int				x;
 	int				y;
+	int 			is_empty;
 	struct s_room	*next;
 }				t_room;
+
+typedef struct	s_path
+{
+	int				*id;
+	struct s_room	*next;
+}				t_path;
 
 typedef struct	s_farm
 {
@@ -42,6 +49,7 @@ typedef struct	s_farm
 	t_room	*head_room;
 	int		**connects;
 	int 	**paths;
+	t_path	*main_path;
 	int		start_id;
 	int		end_id;
 	

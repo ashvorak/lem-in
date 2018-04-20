@@ -353,6 +353,9 @@
 		<Unit filename="/Users/oshvorak/lem-in/lib/libft.h">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/lem-in/src/handle_ways.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/lem-in/src/main.c">
 			<Option target="lem_in"/>
 		</Unit>

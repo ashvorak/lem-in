@@ -22,6 +22,7 @@ static t_room	*new_room(int id, char *name, int x, int y)
 	room->name = name;
 	room->x = x;
 	room->y = y;
+	room->is_empty = 0;
 	room->next = NULL;
 	return (room);
 }

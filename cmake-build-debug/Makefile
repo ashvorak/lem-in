@@ -2472,6 +2472,33 @@ lib/get_next_line/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.s
 .PHONY : lib/get_next_line/get_next_line.c.s
 
+src/handle_ways.o: src/handle_ways.c.o
+
+.PHONY : src/handle_ways.o
+
+# target to build an object file
+src/handle_ways.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_ways.c.o
+.PHONY : src/handle_ways.c.o
+
+src/handle_ways.i: src/handle_ways.c.i
+
+.PHONY : src/handle_ways.i
+
+# target to preprocess a source file
+src/handle_ways.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_ways.c.i
+.PHONY : src/handle_ways.c.i
+
+src/handle_ways.s: src/handle_ways.c.s
+
+.PHONY : src/handle_ways.s
+
+# target to generate assembly for a file
+src/handle_ways.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_ways.c.s
+.PHONY : src/handle_ways.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -2877,6 +2904,9 @@ help:
 	@echo "... lib/get_next_line/get_next_line.o"
 	@echo "... lib/get_next_line/get_next_line.i"
 	@echo "... lib/get_next_line/get_next_line.s"
+	@echo "... src/handle_ways.o"
+	@echo "... src/handle_ways.i"
+	@echo "... src/handle_ways.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
