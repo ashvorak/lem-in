@@ -12,7 +12,7 @@
 
 #include "../inc/lem_in.h"
 
-static t_room	*new_room(int id, char *name, int x, int y)
+t_room	*new_room(int id, char *name, int x, int y)
 {
 	t_room *room;
 
@@ -22,7 +22,8 @@ static t_room	*new_room(int id, char *name, int x, int y)
 	room->name = name;
 	room->x = x;
 	room->y = y;
-	room->is_empty = 0;
+	room->is_ant = 0;
+	room->is_way = 0;
 	room->next = NULL;
 	return (room);
 }

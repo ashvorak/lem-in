@@ -32,9 +32,10 @@ static t_farm	*new_farm(int ants)
 		return (NULL);
 	farm->ants = ants;
 	farm->head_room = NULL;
+	farm->size = 0;
 	farm->connects = NULL;
 	farm->paths = NULL;
-	farm->main_path = NULL;
+	farm->head_path = NULL;
 	farm->start_id = -1;
 	farm->end_id = -1;
 	return (farm);
@@ -56,6 +57,7 @@ int				main(int ac, char **av)
 		read_rooms(fd, farm, &line);
 		read_connections(fd, farm, &line);
 		wave_tracing(farm);
+		handle_ways(farm);
 	}
 	else
 		ft_usage();

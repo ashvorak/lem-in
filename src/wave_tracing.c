@@ -44,18 +44,17 @@ static int	fill_path(t_farm *farm, int wt, int size)
 	}
 	return (bool);
 }
-
+//nahui ubrat SIZE (CHANGE FARM->SIZE ANYWHERE)
 void		wave_tracing(t_farm *farm)
 {
 	int i;
 	int bool;
 	int wt;
-	int size;
 
 	i = 0;
-	size = farm_size(farm);
+	farm->size = farm_size(farm);
 	farm->paths = ret_matrix(farm);
-	while (i < size)
+	while (i < farm->size)
 	{
 		if (farm->connects[farm->start_id][i] == 1)
 		{
@@ -68,7 +67,7 @@ void		wave_tracing(t_farm *farm)
 	bool = 1;
 	while (bool)
 	{
-		bool = fill_path(farm, wt, size);
+		bool = fill_path(farm, wt, farm->size);
 		wt++;
 	}
 }

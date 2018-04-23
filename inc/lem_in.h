@@ -33,13 +33,15 @@ typedef struct	s_room
 	char			*name;
 	int				x;
 	int				y;
-	int 			is_empty;
+	int 			is_ant;
+	int 			is_way;
 	struct s_room	*next;
 }				t_room;
 
 typedef struct	s_path
 {
-	int				*id;
+	int 			ants;
+	t_room			*head_room;
 	struct s_room	*next;
 }				t_path;
 
@@ -47,9 +49,10 @@ typedef struct	s_farm
 {
 	int		ants;
 	t_room	*head_room;
+	int 	size;
 	int		**connects;
 	int 	**paths;
-	t_path	*main_path;
+	t_path	*head_path;
 	int		start_id;
 	int		end_id;
 	
@@ -68,7 +71,10 @@ void	read_connections(int fd, t_farm *farm, char **line);
 int		farm_size(t_farm *farm);
 int		**ret_matrix(t_farm *farm);
 
+t_room	*new_room(int id, char *name, int x, int y);
+
 void	wave_tracing(t_farm *farm);
+void	handle_ways(t_farm *farm);
 
 int		farm_size(t_farm *farm);
 
