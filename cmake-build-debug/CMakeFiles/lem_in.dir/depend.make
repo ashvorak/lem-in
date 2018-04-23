@@ -269,6 +269,12 @@ CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.o: ../lib/get_next_line/
 CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.o: ../lib/get_next_line/get_next_line.h
 CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.o: ../lib/libft.h
 
+CMakeFiles/lem_in.dir/src/handle_ways.c.o: ../inc/lem_in.h
+CMakeFiles/lem_in.dir/src/handle_ways.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/lem_in.dir/src/handle_ways.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/lem_in.dir/src/handle_ways.c.o: ../lib/libft.h
+CMakeFiles/lem_in.dir/src/handle_ways.c.o: ../src/handle_ways.c
+
 CMakeFiles/lem_in.dir/src/main.c.o: ../inc/lem_in.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../lib/get_next_line/get_next_line.h

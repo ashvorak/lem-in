@@ -46,7 +46,7 @@ static t_room	*copy_room(t_room *room)
 	return (copy);
 }
 
-static void		*clean_connect(t_farm *farm, int id)
+static void		clean_connect(t_farm *farm, int id)
 {
 	int i;
 	int j;
@@ -81,7 +81,7 @@ static t_path	*make_path(t_farm *farm)
 		room = copy_room(ret_room(farm, id_min));
 		room->next = head_room;
 		head_room = room;
-		//clean_connect(farm, id_min);
+		id_way != farm->end_id ? clean_connect(farm, id_way) : 0;
 		id_way = id_min;
 	}
 	path = new_path(head_room);

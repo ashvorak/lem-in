@@ -269,6 +269,12 @@ CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.o
  /Users/oshvorak/lem-in/lib/get_next_line/get_next_line.c
  /Users/oshvorak/lem-in/lib/get_next_line/get_next_line.h
  /Users/oshvorak/lem-in/lib/libft.h
+CMakeFiles/lem_in.dir/src/handle_ways.c.o
+ /Users/oshvorak/lem-in/inc/lem_in.h
+ /Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/lem-in/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/lem-in/lib/libft.h
+ /Users/oshvorak/lem-in/src/handle_ways.c
 CMakeFiles/lem_in.dir/src/main.c.o
  /Users/oshvorak/lem-in/inc/lem_in.h
  /Users/oshvorak/lem-in/lib/ft_printf/inc/ft_printf.h

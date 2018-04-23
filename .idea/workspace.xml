@@ -13,11 +13,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c36caba9-5ee2-486e-b895-e5079c1d13f5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/inc/lem_in.h" afterPath="$PROJECT_DIR$/inc/lem_in.h" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/C.includecache" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.internal" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/depend.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/main.c.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_connections.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_connections.c.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_rooms.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/read_rooms.c.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/valid.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lem_in.dir/src/valid.c.o" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lem_in" afterPath="$PROJECT_DIR$/cmake-build-debug/lem_in" />
       <change beforePath="$PROJECT_DIR$/src/handle_ways.c" afterPath="$PROJECT_DIR$/src/handle_ways.c" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" afterPath="$PROJECT_DIR$/src/main.c" />
-      <change beforePath="$PROJECT_DIR$/src/read_rooms.c" afterPath="$PROJECT_DIR$/src/read_rooms.c" />
-      <change beforePath="$PROJECT_DIR$/src/wave_tracing.c" afterPath="$PROJECT_DIR$/src/wave_tracing.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +39,7 @@
           <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
+                <state relative-caret-position="690">
                   <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
                   <folding />
                 </state>
@@ -45,8 +49,8 @@
           <file leaf-file-name="handle_ways.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/handle_ways.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+                <state relative-caret-position="570">
+                  <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -55,8 +59,8 @@
           <file leaf-file-name="wave_tracing.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/wave_tracing.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+                <state relative-caret-position="690">
+                  <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
                   <folding />
                 </state>
               </provider>
@@ -75,7 +79,7 @@
           <file leaf-file-name="read_connections.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/read_connections.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="376">
+                <state relative-caret-position="795">
                   <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
                   <folding />
                 </state>
@@ -95,7 +99,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="read_rooms.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/read_rooms.c">
               <provider selected="true" editor-type-id="text-editor">
@@ -150,9 +154,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="208" />
+    <option name="y" value="23" />
+    <option name="width" value="2171" />
+    <option name="height" value="1297" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -248,7 +254,8 @@
       <workItem from="1524142875751" duration="5986000" />
       <workItem from="1524227612585" duration="4714000" />
       <workItem from="1524239974424" duration="2924000" />
-      <workItem from="1524467355817" duration="9339000" />
+      <workItem from="1524467355817" duration="9369000" />
+      <workItem from="1524484641254" duration="2663000" />
     </task>
     <task id="LOCAL-00001" summary="valid(demo3)">
       <created>1523613039425</created>
@@ -292,27 +299,34 @@
       <option name="project" value="LOCAL" />
       <updated>1524244349653</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="algo(demo4)">
+      <created>1524477928151</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1524477928151</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50671000" />
+    <option name="totallyTimeSpent" value="53364000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="208" y="23" width="2171" height="1297" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2865039" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32374102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3232653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35971224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39102042" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36690646" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3733813" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3722449" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -336,18 +350,12 @@
     <MESSAGE value="algo(demo(2))" />
     <MESSAGE value="wave_tracing(demo)" />
     <MESSAGE value="algo(demo3)" />
-    <option name="LAST_COMMIT_MESSAGE" value="algo(demo3)" />
+    <MESSAGE value="algo(demo4)" />
+    <option name="LAST_COMMIT_MESSAGE" value="algo(demo4)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/main.c</url>
-          <line>59</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="74" />
+      <option name="time" value="81" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -658,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +687,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/read_connections.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
+        <state relative-caret-position="795">
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
@@ -688,8 +695,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wave_tracing.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
+        <state relative-caret-position="690">
+          <caret line="46" column="47" lean-forward="false" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -702,14 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/read_rooms.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -718,10 +717,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/handle_ways.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="570">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
           <folding />
         </state>
       </provider>
