@@ -23,7 +23,6 @@ t_room	*new_room(int id, char *name, int x, int y)
 	room->x = x;
 	room->y = y;
 	room->is_ant = 0;
-	room->is_way = 0;
 	room->next = NULL;
 	return (room);
 }

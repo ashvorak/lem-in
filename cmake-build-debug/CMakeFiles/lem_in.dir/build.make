@@ -2265,28 +2265,52 @@ CMakeFiles/lem_in.dir/src/wave_tracing.c.o.provides: CMakeFiles/lem_in.dir/src/w
 CMakeFiles/lem_in.dir/src/wave_tracing.c.o.provides.build: CMakeFiles/lem_in.dir/src/wave_tracing.c.o
 
 
-CMakeFiles/lem_in.dir/src/handle_ways.c.o: CMakeFiles/lem_in.dir/flags.make
-CMakeFiles/lem_in.dir/src/handle_ways.c.o: ../src/handle_ways.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/lem_in.dir/src/handle_ways.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/handle_ways.c.o   -c /Users/oshvorak/lem-in/src/handle_ways.c
+CMakeFiles/lem_in.dir/src/handle_paths.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/handle_paths.c.o: ../src/handle_paths.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/lem_in.dir/src/handle_paths.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/handle_paths.c.o   -c /Users/oshvorak/lem-in/src/handle_paths.c
 
-CMakeFiles/lem_in.dir/src/handle_ways.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/handle_ways.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/lem-in/src/handle_ways.c > CMakeFiles/lem_in.dir/src/handle_ways.c.i
+CMakeFiles/lem_in.dir/src/handle_paths.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/handle_paths.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/lem-in/src/handle_paths.c > CMakeFiles/lem_in.dir/src/handle_paths.c.i
 
-CMakeFiles/lem_in.dir/src/handle_ways.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/handle_ways.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/lem-in/src/handle_ways.c -o CMakeFiles/lem_in.dir/src/handle_ways.c.s
+CMakeFiles/lem_in.dir/src/handle_paths.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/handle_paths.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/lem-in/src/handle_paths.c -o CMakeFiles/lem_in.dir/src/handle_paths.c.s
 
-CMakeFiles/lem_in.dir/src/handle_ways.c.o.requires:
+CMakeFiles/lem_in.dir/src/handle_paths.c.o.requires:
 
-.PHONY : CMakeFiles/lem_in.dir/src/handle_ways.c.o.requires
+.PHONY : CMakeFiles/lem_in.dir/src/handle_paths.c.o.requires
 
-CMakeFiles/lem_in.dir/src/handle_ways.c.o.provides: CMakeFiles/lem_in.dir/src/handle_ways.c.o.requires
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_ways.c.o.provides.build
-.PHONY : CMakeFiles/lem_in.dir/src/handle_ways.c.o.provides
+CMakeFiles/lem_in.dir/src/handle_paths.c.o.provides: CMakeFiles/lem_in.dir/src/handle_paths.c.o.requires
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_paths.c.o.provides.build
+.PHONY : CMakeFiles/lem_in.dir/src/handle_paths.c.o.provides
 
-CMakeFiles/lem_in.dir/src/handle_ways.c.o.provides.build: CMakeFiles/lem_in.dir/src/handle_ways.c.o
+CMakeFiles/lem_in.dir/src/handle_paths.c.o.provides.build: CMakeFiles/lem_in.dir/src/handle_paths.c.o
+
+
+CMakeFiles/lem_in.dir/src/print_paths.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/print_paths.c.o: ../src/print_paths.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/lem_in.dir/src/print_paths.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/print_paths.c.o   -c /Users/oshvorak/lem-in/src/print_paths.c
+
+CMakeFiles/lem_in.dir/src/print_paths.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/print_paths.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/lem-in/src/print_paths.c > CMakeFiles/lem_in.dir/src/print_paths.c.i
+
+CMakeFiles/lem_in.dir/src/print_paths.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/print_paths.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/lem-in/src/print_paths.c -o CMakeFiles/lem_in.dir/src/print_paths.c.s
+
+CMakeFiles/lem_in.dir/src/print_paths.c.o.requires:
+
+.PHONY : CMakeFiles/lem_in.dir/src/print_paths.c.o.requires
+
+CMakeFiles/lem_in.dir/src/print_paths.c.o.provides: CMakeFiles/lem_in.dir/src/print_paths.c.o.requires
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_paths.c.o.provides.build
+.PHONY : CMakeFiles/lem_in.dir/src/print_paths.c.o.provides
+
+CMakeFiles/lem_in.dir/src/print_paths.c.o.provides.build: CMakeFiles/lem_in.dir/src/print_paths.c.o
 
 
 # Object files for target lem_in
@@ -2383,7 +2407,8 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/valid.c.o" \
 "CMakeFiles/lem_in.dir/src/read_connections.c.o" \
 "CMakeFiles/lem_in.dir/src/wave_tracing.c.o" \
-"CMakeFiles/lem_in.dir/src/handle_ways.c.o"
+"CMakeFiles/lem_in.dir/src/handle_paths.c.o" \
+"CMakeFiles/lem_in.dir/src/print_paths.c.o"
 
 # External object files for target lem_in
 lem_in_EXTERNAL_OBJECTS =
@@ -2480,10 +2505,11 @@ lem_in: CMakeFiles/lem_in.dir/src/read_rooms.c.o
 lem_in: CMakeFiles/lem_in.dir/src/valid.c.o
 lem_in: CMakeFiles/lem_in.dir/src/read_connections.c.o
 lem_in: CMakeFiles/lem_in.dir/src/wave_tracing.c.o
-lem_in: CMakeFiles/lem_in.dir/src/handle_ways.c.o
+lem_in: CMakeFiles/lem_in.dir/src/handle_paths.c.o
+lem_in: CMakeFiles/lem_in.dir/src/print_paths.c.o
 lem_in: CMakeFiles/lem_in.dir/build.make
 lem_in: CMakeFiles/lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Linking C executable lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Linking C executable lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2583,7 +2609,8 @@ CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/read_rooms.c.o.require
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/valid.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/read_connections.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/wave_tracing.c.o.requires
-CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/handle_ways.c.o.requires
+CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/handle_paths.c.o.requires
+CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/print_paths.c.o.requires
 
 .PHONY : CMakeFiles/lem_in.dir/requires
 

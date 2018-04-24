@@ -34,15 +34,16 @@ typedef struct	s_room
 	int				x;
 	int				y;
 	int 			is_ant;
-	int 			is_way;
 	struct s_room	*next;
 }				t_room;
 
 typedef struct	s_path
 {
-	int 			ants;
+	int 			ants_start;
+	int 			ants_go;
+	int 			ants_end;
 	t_room			*head_room;
-	struct s_room	*next;
+	struct s_path	*next;
 }				t_path;
 
 typedef struct	s_farm

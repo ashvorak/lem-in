@@ -2472,32 +2472,32 @@ lib/get_next_line/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.s
 .PHONY : lib/get_next_line/get_next_line.c.s
 
-src/handle_ways.o: src/handle_ways.c.o
+src/handle_paths.o: src/handle_paths.c.o
 
-.PHONY : src/handle_ways.o
+.PHONY : src/handle_paths.o
 
 # target to build an object file
-src/handle_ways.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_ways.c.o
-.PHONY : src/handle_ways.c.o
+src/handle_paths.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_paths.c.o
+.PHONY : src/handle_paths.c.o
 
-src/handle_ways.i: src/handle_ways.c.i
+src/handle_paths.i: src/handle_paths.c.i
 
-.PHONY : src/handle_ways.i
+.PHONY : src/handle_paths.i
 
 # target to preprocess a source file
-src/handle_ways.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_ways.c.i
-.PHONY : src/handle_ways.c.i
+src/handle_paths.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_paths.c.i
+.PHONY : src/handle_paths.c.i
 
-src/handle_ways.s: src/handle_ways.c.s
+src/handle_paths.s: src/handle_paths.c.s
 
-.PHONY : src/handle_ways.s
+.PHONY : src/handle_paths.s
 
 # target to generate assembly for a file
-src/handle_ways.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_ways.c.s
-.PHONY : src/handle_ways.c.s
+src/handle_paths.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_paths.c.s
+.PHONY : src/handle_paths.c.s
 
 src/main.o: src/main.c.o
 
@@ -2525,6 +2525,33 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+src/print_paths.o: src/print_paths.c.o
+
+.PHONY : src/print_paths.o
+
+# target to build an object file
+src/print_paths.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_paths.c.o
+.PHONY : src/print_paths.c.o
+
+src/print_paths.i: src/print_paths.c.i
+
+.PHONY : src/print_paths.i
+
+# target to preprocess a source file
+src/print_paths.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_paths.c.i
+.PHONY : src/print_paths.c.i
+
+src/print_paths.s: src/print_paths.c.s
+
+.PHONY : src/print_paths.s
+
+# target to generate assembly for a file
+src/print_paths.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_paths.c.s
+.PHONY : src/print_paths.c.s
 
 src/read_connections.o: src/read_connections.c.o
 
@@ -2904,12 +2931,15 @@ help:
 	@echo "... lib/get_next_line/get_next_line.o"
 	@echo "... lib/get_next_line/get_next_line.i"
 	@echo "... lib/get_next_line/get_next_line.s"
-	@echo "... src/handle_ways.o"
-	@echo "... src/handle_ways.i"
-	@echo "... src/handle_ways.s"
+	@echo "... src/handle_paths.o"
+	@echo "... src/handle_paths.i"
+	@echo "... src/handle_paths.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/print_paths.o"
+	@echo "... src/print_paths.i"
+	@echo "... src/print_paths.s"
 	@echo "... src/read_connections.o"
 	@echo "... src/read_connections.i"
 	@echo "... src/read_connections.s"

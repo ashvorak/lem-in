@@ -61,27 +61,5 @@ int				main(int ac, char **av)
 	}
 	else
 		ft_usage();
-	int i = 0;
-	int j = 0;
-	int size = farm_size(farm);
-	while (i < size)
-	{
-		j = 0;
-		while (j < size)
-			ft_printf("%d ", farm->connects[i][j++]);
-		ft_printf("\n");
-		i++;
-	}
-	ft_printf("\n");
-	ft_printf("\n");
-	i = 0;
-	while (i < size)
-	{
-		j = 0;
-		while (j < size)
-			ft_printf("%d ", farm->paths[i][j++]);
-		ft_printf("\n");
-		i++;
-	}
 	return (0);
 }

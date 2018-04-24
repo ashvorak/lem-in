@@ -353,10 +353,13 @@
 		<Unit filename="/Users/oshvorak/lem-in/lib/libft.h">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/Users/oshvorak/lem-in/src/handle_ways.c">
+		<Unit filename="/Users/oshvorak/lem-in/src/handle_paths.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/lem-in/src/main.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/lem-in/src/print_paths.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/lem-in/src/read_connections.c">
