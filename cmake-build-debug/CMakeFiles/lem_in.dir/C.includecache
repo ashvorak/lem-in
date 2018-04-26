@@ -368,11 +368,15 @@ stdlib.h
 string.h
 -
 
-/Users/oshvorak/lem-in/src/handle_ways.c
+/Users/oshvorak/lem-in/src/handle_paths.c
 ../inc/lem_in.h
 /Users/oshvorak/lem-in/inc/lem_in.h
 
 /Users/oshvorak/lem-in/src/main.c
+../inc/lem_in.h
+/Users/oshvorak/lem-in/inc/lem_in.h
+
+/Users/oshvorak/lem-in/src/print_paths.c
 ../inc/lem_in.h
 /Users/oshvorak/lem-in/inc/lem_in.h
 

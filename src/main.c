@@ -58,6 +58,7 @@ int				main(int ac, char **av)
 		read_connections(fd, farm, &line);
 		wave_tracing(farm);
 		handle_ways(farm);
+		print_paths(farm);
 	}
 	else
 		ft_usage();

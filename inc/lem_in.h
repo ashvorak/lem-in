@@ -39,6 +39,7 @@ typedef struct	s_room
 
 typedef struct	s_path
 {
+	int 			first_ant;
 	int 			ants_start;
 	int 			ants_go;
 	int 			ants_end;
@@ -76,6 +77,7 @@ t_room	*new_room(int id, char *name, int x, int y);
 
 void	wave_tracing(t_farm *farm);
 void	handle_ways(t_farm *farm);
+void	print_paths(t_farm *farm);
 
 int		farm_size(t_farm *farm);
 
