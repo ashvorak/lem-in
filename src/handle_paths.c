@@ -7,9 +7,9 @@ static t_path	*new_path(t_room *room)
 	if (!(path = (t_path*)malloc(sizeof(t_path))))
 		return (NULL);
 	path->first_ant = 0;
-	path->ants_start = 0;
+	path->ants = 0;
 	path->ants_go = 0;
-	path->ants_end = 0;
+	path->ants_finish = 0;
 	path->head_room = room;
 	path->next = NULL;
 	return (path);
@@ -114,19 +114,54 @@ static t_path	*make_path(t_farm *farm)
 	return (path);
 }
 
+void allocation_ants(t_farm *farm)
+{
+	int 	ants;
+	t_path	*tmp;
+
+	ants = farm->ants;
+	tmp = farm->head_path;
+	while (ants)
+	{
+		while (tmp->next)
+		{
+			if (tmp->length + tmp->ants < tmp->next->length + tmp->next->ants)
+			{
+				tmp->ants++;
+				break ;
+			}
+			tmp = tmp->next;
+			if (!tmp->next)
+				tmp->ants++;
+		}
+		tmp = farm->head_path;
+		ants--;
+	}
+}
+
+int path_length(t_path *path)
+{
+	int		size;
+	t_room	*tmp;
+
+	size = 0;
+	tmp = path->head_room;
+	while (tmp)
+	{
+		size++;
+		tmp = tmp->next;
+	}
+	return (size);
+}
+
 void handle_ways(t_farm *farm)
 {
-	int 	ant;
 	t_room	*tmp;
 	t_path	*buf;
 	t_path	*path;
 
-	ant = 1;
 	while ((path = make_path(farm)))
 	{
-		path->ants_start = 5;
-		path->first_ant = ant;
-		ant += 5;
 		if (!farm->head_path)
 		{
 			farm->head_path = path;
@@ -137,16 +172,20 @@ void handle_ways(t_farm *farm)
 			buf->next = path;
 			buf = path;
 		}
+		path->length = path_length(path);
 	}
+	allocation_ants(farm);
 	buf = farm->head_path;
 	while (buf)
 	{
 		tmp = buf->head_room;
 		while (tmp)
 		{
-			ft_printf("%s\n", tmp->name);
+			ft_printf("%s ", tmp->name);
 			tmp = tmp->next;
 		}
+		ft_printf("\nlen %d\n", buf->length);
+		ft_printf("number %d\n", buf->ants);
 		ft_printf("--------------------\n");
 		buf = buf->next;
 	}

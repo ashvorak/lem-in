@@ -40,9 +40,10 @@ typedef struct	s_room
 typedef struct	s_path
 {
 	int 			first_ant;
-	int 			ants_start;
+	int 			ants;
 	int 			ants_go;
-	int 			ants_end;
+	int 			ants_finish;
+	int 			length;
 	t_room			*head_room;
 	struct s_path	*next;
 }				t_path;
