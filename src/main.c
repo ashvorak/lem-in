@@ -55,10 +55,11 @@ int				main(int ac, char **av)
 		farm = new_farm(ft_atoi(line));
 		ft_strdel(&line);
 		read_rooms(fd, farm, &line);
+		(farm->start_id == -1 || farm->end_id == -1) ? ft_error() : 0;
 		read_connections(fd, farm, &line);
 		wave_tracing(farm);
 		handle_ways(farm);
-		//print_paths(farm);
+		print_paths(farm);
 	}
 	else
 		ft_usage();

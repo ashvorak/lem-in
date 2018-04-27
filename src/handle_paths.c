@@ -66,7 +66,10 @@ static void		clean_connect(t_farm *farm, int id)
 		while (j < farm->size)
 		{
 			if (i == id || j == id)
-				farm->paths[i][j] = 0;
+			{
+				farm->connects[i][j] = 0;
+				farm->connects[j][i] = 0;
+			}
 			j++;
 		}
 		i++;
@@ -100,17 +103,6 @@ static t_path	*make_path(t_farm *farm)
 		id_way = id_min;
 	}
 	path = new_path(head_room);
-	int i = 0;
-	int j;
-	while (i < farm->size)
-	{
-		j = 0;
-		while (j < farm->size)
-			ft_printf("%d ", farm->paths[i][j++]);
-		ft_printf("\n");
-		i++;
-	}
-	ft_printf("\n");
 	return (path);
 }
 
@@ -131,9 +123,9 @@ void allocation_ants(t_farm *farm)
 				break ;
 			}
 			tmp = tmp->next;
-			if (!tmp->next)
-				tmp->ants++;
 		}
+		if (!tmp->next)
+			tmp->ants++;
 		tmp = farm->head_path;
 		ants--;
 	}
@@ -173,8 +165,9 @@ void handle_ways(t_farm *farm)
 			buf = path;
 		}
 		path->length = path_length(path);
+		wave_tracing(farm);
 	}
-	allocation_ants(farm);
+	(farm->head_path) ? allocation_ants(farm) : ft_error();
 	buf = farm->head_path;
 	while (buf)
 	{

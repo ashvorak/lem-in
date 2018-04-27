@@ -44,7 +44,6 @@ void			read_rooms(int fd, t_farm *farm, char **line)
 
 	id = 0;
 	while (get_next_line(fd, line))
-	{
 		if (is_room(*line))
 		{
 			arr = ft_strsplit(*line, ' ');
@@ -52,7 +51,9 @@ void			read_rooms(int fd, t_farm *farm, char **line)
 			if (id == 0)
 				farm->head_room = room;
 			else
+			{
 				tmp->next = room;
+			}
 			tmp = room;
 			id++;
 			ft_free_arr(arr);
@@ -61,5 +62,4 @@ void			read_rooms(int fd, t_farm *farm, char **line)
 			parse_start_end(line, farm, id);
 		else
 			break;
-	}
 }
