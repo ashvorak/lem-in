@@ -359,6 +359,9 @@
 		<Unit filename="/Users/oshvorak/lem-in/src/main.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/lem-in/src/map_join.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/lem-in/src/print_paths.c">
 			<Option target="lem_in"/>
 		</Unit>

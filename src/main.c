@@ -30,6 +30,7 @@ static t_farm	*new_farm(int ants)
 
 	if (!(farm = (t_farm*)malloc(sizeof(t_farm))))
 		return (NULL);
+	farm->map = NULL;
 	farm->ants = ants;
 	farm->head_room = NULL;
 	farm->size = 0;
@@ -53,10 +54,10 @@ int				main(int ac, char **av)
 		get_next_line(fd, &line) == -1 ? ft_error() : 0;
 		!is_integer(line) ? ft_error() : 0;
 		farm = new_farm(ft_atoi(line));
-		ft_strdel(&line);
 		read_rooms(fd, farm, &line);
 		(farm->start_id == -1 || farm->end_id == -1) ? ft_error() : 0;
 		read_connections(fd, farm, &line);
+		ft_printf("%s\n", farm->map);
 		wave_tracing(farm);
 		handle_ways(farm);
 		print_paths(farm);

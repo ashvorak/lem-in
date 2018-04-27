@@ -69,11 +69,11 @@ int	is_name(char *str, t_farm *farm)
 	}
 	return (0);
 }
-//same coord!!!
+
 int	is_connection(char *line, t_farm *farm)
 {
 	char	**arr;
-	
+
 	arr = ft_strsplit(line, '-');
 	if (ft_array_size(arr) != 2)
 		return (0);

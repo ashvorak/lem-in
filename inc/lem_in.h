@@ -51,6 +51,7 @@ typedef struct	s_path
 typedef struct	s_farm
 {
 	int		ants;
+	char	*map;
 	t_room	*head_room;
 	int 	size;
 	int		**connects;
@@ -79,6 +80,7 @@ t_room	*new_room(int id, char *name, int x, int y);
 void	wave_tracing(t_farm *farm);
 void	handle_ways(t_farm *farm);
 void	print_paths(t_farm *farm);
+void	map_join(t_farm *farm, char *line);
 
 int		farm_size(t_farm *farm);
 

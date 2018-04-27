@@ -93,6 +93,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/wave_tracing.c.o"
   "CMakeFiles/lem_in.dir/src/handle_paths.c.o"
   "CMakeFiles/lem_in.dir/src/print_paths.c.o"
+  "CMakeFiles/lem_in.dir/src/map_join.c.o"
   "lem_in.pdb"
   "lem_in"
 )

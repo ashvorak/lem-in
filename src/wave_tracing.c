@@ -1,6 +1,6 @@
 #include "../inc/lem_in.h"
 
-static int	fill_wt(t_farm *farm, int wt, int size, int j)
+static int	fill_wt(t_farm *farm, int wt, int j)
 {
 	int p;
 	int q;
@@ -9,7 +9,7 @@ static int	fill_wt(t_farm *farm, int wt, int size, int j)
 	p = j;
 	q = 0;
 	bool = 0;
-	while (q < size)
+	while (q < farm->size)
 	{
 		if (farm->connects[p][q] == 1)
 			if (farm->paths[p][q] == 0)
@@ -23,7 +23,7 @@ static int	fill_wt(t_farm *farm, int wt, int size, int j)
 	return (bool);
 }
 
-static int	fill_path(t_farm *farm, int wt, int size)
+static int	fill_path(t_farm *farm, int wt)
 {
 	int i;
 	int j;
@@ -31,13 +31,13 @@ static int	fill_path(t_farm *farm, int wt, int size)
 
 	i = 0;
 	bool = 0;
-	while (i < size)
+	while (i < farm->size)
 	{
 		j = 0;
-		while (j < size)
+		while (j < farm->size)
 		{
 			if (farm->paths[i][j] == wt - 1)
-				fill_wt(farm, wt, size, j) ? bool = 1 : 0;
+				fill_wt(farm, wt, j) ? bool = 1 : 0;
 			j++;
 		}
 		i++;
@@ -67,7 +67,7 @@ void		wave_tracing(t_farm *farm)
 	bool = 1;
 	while (bool)
 	{
-		bool = fill_path(farm, wt, farm->size);
+		bool = fill_path(farm, wt);
 		wt++;
 	}
 }

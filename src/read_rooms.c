@@ -35,6 +35,20 @@ static void		parse_start_end(char **line, t_farm *farm, int id)
 		farm->end_id = id;
 }
 
+static int check_same_coor(t_farm *farm, t_room *room)
+{
+	t_room *tmp;
+
+	tmp = farm->head_room;
+	while (tmp)
+	{
+		if ((tmp->x == room->x) && (tmp->y == room->y))
+			return (0);
+		tmp = tmp->next;
+	}
+	return (1);
+}
+
 void			read_rooms(int fd, t_farm *farm, char **line)
 {
 	int		id;
@@ -44,22 +58,25 @@ void			read_rooms(int fd, t_farm *farm, char **line)
 
 	id = 0;
 	while (get_next_line(fd, line))
+	{
 		if (is_room(*line))
 		{
 			arr = ft_strsplit(*line, ' ');
 			room = new_room(id, ft_strdup(arr[0]), ft_atoi(arr[1]), ft_atoi(arr[2]));
-			if (id == 0)
+			if (id++ == 0)
 				farm->head_room = room;
 			else
 			{
+				!check_same_coor(farm, room) ? ft_error() : 0;
 				tmp->next = room;
 			}
 			tmp = room;
-			id++;
 			ft_free_arr(arr);
 		}
 		else if (is_command(*line))
 			parse_start_end(line, farm, id);
 		else
 			break;
+		map_join(farm, *line);
+	}
 }

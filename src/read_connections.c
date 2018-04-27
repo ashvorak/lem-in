@@ -71,14 +71,13 @@ void	read_connections(int fd, t_farm *farm, char **line)
 				arr = ft_strsplit(*line, '-');
 				x = ret_id(farm, arr[0]);
 				y = ret_id(farm, arr[1]);
-				//(!connects[x][y]) ? connects[x][y] = 1 : ft_error();
-				//(!connects[y][x]) ? connects[y][x] = 1 : ft_error();
 				connects[y][x] = 1;
 				connects[x][y] = 1;
 			}
 		}
 		else
 			ft_error();
+		map_join(farm, *line);
 	} while (get_next_line(fd, line));
 	farm->connects = connects;
 }
