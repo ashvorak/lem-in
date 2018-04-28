@@ -98,8 +98,13 @@ static t_path	*make_path(t_farm *farm)
 			tmp->next = room;
 			tmp = room;
 		}
-		if (id_way != farm->end_id || (id_way == farm->end_id && id_min == farm->start_id))
+		if (id_way != farm->end_id)
 			clean_connect(farm, id_way);
+		else if (id_way == farm->end_id && id_min == farm->start_id)
+		{
+			farm->connects[farm->start_id][farm->end_id] = 0;
+			farm->connects[farm->end_id][farm->start_id] = 0;
+		}
 		id_way = id_min;
 	}
 	path = new_path(head_room);

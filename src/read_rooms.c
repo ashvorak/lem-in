@@ -79,4 +79,5 @@ void			read_rooms(int fd, t_farm *farm, char **line)
 			break;
 		map_join(farm, *line);
 	}
+	(farm->start_id == -1 || farm->end_id == -1) ? ft_error() : 0;
 }

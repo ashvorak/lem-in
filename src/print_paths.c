@@ -27,6 +27,7 @@ static int move(t_path *path, t_farm *farm, int ant_num)
 			ft_printf("L%d-%s ", ant_num, tmp->name);
 			path->ants_go++;
 			tmp->is_ant = 1;
+			(path->length == 1) ? path->ants_finish++ : 0;
 		}
 	}
 	return (path->ants_finish);

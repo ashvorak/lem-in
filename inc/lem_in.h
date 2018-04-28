@@ -81,6 +81,7 @@ void	wave_tracing(t_farm *farm);
 void	handle_ways(t_farm *farm);
 void	print_paths(t_farm *farm);
 void	map_join(t_farm *farm, char *line);
+void	free_farm(t_farm *farm);
 
 int		farm_size(t_farm *farm);
 

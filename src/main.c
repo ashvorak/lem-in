@@ -14,24 +14,26 @@
 
 void			ft_error(void)
 {
-	ft_printf("Error\n");
+	ft_printf("ERROR\n");
+	system("leaks lem-in");
 	exit(1);
 }
 
 static	void	ft_usage(void)
 {
 	ft_printf("Usage : ./lem-in <filename>\n");
+	system("leaks lem-in");
 	exit(1);
 }
 
-static t_farm	*new_farm(int ants)
+static t_farm	*new_farm(void)
 {
 	t_farm *farm;
 
 	if (!(farm = (t_farm*)malloc(sizeof(t_farm))))
 		return (NULL);
 	farm->map = NULL;
-	farm->ants = ants;
+	farm->ants = 0;
 	farm->head_room = NULL;
 	farm->size = 0;
 	farm->connects = NULL;
@@ -51,18 +53,19 @@ int				main(int ac, char **av)
 	if (ac == 2)
 	{
 		fd = open(av[1], O_RDONLY);
+		farm = new_farm();
 		get_next_line(fd, &line) == -1 ? ft_error() : 0;
-		!is_integer(line) ? ft_error() : 0;
-		farm = new_farm(ft_atoi(line));
+		is_integer(line) ? farm->ants = ft_atoi(line) : ft_error();
 		read_rooms(fd, farm, &line);
-		(farm->start_id == -1 || farm->end_id == -1) ? ft_error() : 0;
 		read_connections(fd, farm, &line);
 		ft_printf("%s\n", farm->map);
 		wave_tracing(farm);
 		handle_ways(farm);
 		print_paths(farm);
+		free_farm(farm);
 	}
 	else
 		ft_usage();
+	system("leaks lem-in");
 	return (0);
 }

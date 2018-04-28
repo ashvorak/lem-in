@@ -2472,6 +2472,33 @@ lib/get_next_line/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.s
 .PHONY : lib/get_next_line/get_next_line.c.s
 
+src/free_farm.o: src/free_farm.c.o
+
+.PHONY : src/free_farm.o
+
+# target to build an object file
+src/free_farm.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/free_farm.c.o
+.PHONY : src/free_farm.c.o
+
+src/free_farm.i: src/free_farm.c.i
+
+.PHONY : src/free_farm.i
+
+# target to preprocess a source file
+src/free_farm.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/free_farm.c.i
+.PHONY : src/free_farm.c.i
+
+src/free_farm.s: src/free_farm.c.s
+
+.PHONY : src/free_farm.s
+
+# target to generate assembly for a file
+src/free_farm.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/free_farm.c.s
+.PHONY : src/free_farm.c.s
+
 src/handle_paths.o: src/handle_paths.c.o
 
 .PHONY : src/handle_paths.o
@@ -2958,6 +2985,9 @@ help:
 	@echo "... lib/get_next_line/get_next_line.o"
 	@echo "... lib/get_next_line/get_next_line.i"
 	@echo "... lib/get_next_line/get_next_line.s"
+	@echo "... src/free_farm.o"
+	@echo "... src/free_farm.i"
+	@echo "... src/free_farm.s"
 	@echo "... src/handle_paths.o"
 	@echo "... src/handle_paths.i"
 	@echo "... src/handle_paths.s"

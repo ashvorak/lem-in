@@ -44,7 +44,7 @@ static int	fill_path(t_farm *farm, int wt)
 	}
 	return (bool);
 }
-//nahui ubrat SIZE (CHANGE FARM->SIZE ANYWHERE)
+
 void		wave_tracing(t_farm *farm)
 {
 	int i;

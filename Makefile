@@ -17,8 +17,14 @@ LIB = lib.a
 CFLAGS = -Wall -Wextra -Werror -I$(INC)
 
 SRC = ./src/main.c \
-	  ./src/reader.c \
-	  ./src/valid.c	
+	  ./src/valid.c	 \
+	  ./src/read_rooms.c \
+	  ./src/read_connections.c \
+	  ./src/map_join.c \
+	  ./src/handle_paths.c \
+	  ./src/wave_tracing.c \
+	  ./src/print_paths.c \
+	  ./src/free_farm.c
 
 GNL = ./lib/get_next_line/get_next_line.c
 
