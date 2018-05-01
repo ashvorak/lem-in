@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   print_paths.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/01 14:17:05 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/01 14:17:25 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/lem_in.h"
 
-static int move(t_path *path, t_farm *farm, int ant_num)
+static int	move(t_path *path, t_farm *farm, int ant_num)
 {
 	int		ant;
 	t_room	*tmp;
@@ -33,14 +45,13 @@ static int move(t_path *path, t_farm *farm, int ant_num)
 	return (path->ants_finish);
 }
 
-void print_paths(t_farm *farm)
+void		print_paths(t_farm *farm)
 {
-	int 	ants_finish;
-	int 	ant_num;
+	int		ants_finish;
+	int		ant_num;
 	t_path	*tmp;
 
 	ants_finish = 0;
-	ant_num = 1;
 	while (ants_finish != farm->ants)
 	{
 		ants_finish = 0;

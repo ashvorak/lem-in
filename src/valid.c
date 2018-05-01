@@ -12,7 +12,7 @@
 
 #include "../inc/lem_in.h"
 
-int is_integer(char *str)
+int	is_integer(char *str)
 {
 	while (*str)
 	{
@@ -51,7 +51,7 @@ int	is_command(char *line)
 		else if (ft_strstr(line, "##end"))
 			return (end);
 		else
-			return (comment);	
+			return (comment);
 	}
 	return (0);
 }
@@ -72,14 +72,18 @@ int	is_name(char *str, t_farm *farm)
 
 int	is_connection(char *line, t_farm *farm)
 {
+	int		res;
 	char	**arr;
 
 	arr = ft_strsplit(line, '-');
 	if (ft_array_size(arr) != 2)
-		return (0);
+		res = 0;
 	else if (!ft_strcmp(arr[0], arr[1]))
-		return (0);
+		res = 0;
 	else if (!is_name(arr[0], farm) || !is_name(arr[1], farm))
-		return (0);
-	return (1);
+		res = 0;
+	else
+		res = 1;
+	ft_free_arr(arr);
+	return (res);
 }

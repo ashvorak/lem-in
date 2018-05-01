@@ -2361,6 +2361,54 @@ CMakeFiles/lem_in.dir/src/free_farm.c.o.provides: CMakeFiles/lem_in.dir/src/free
 CMakeFiles/lem_in.dir/src/free_farm.c.o.provides.build: CMakeFiles/lem_in.dir/src/free_farm.c.o
 
 
+CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o: ../lib/ft_free_arr_int.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o   -c /Users/oshvorak/lem-in/lib/ft_free_arr_int.c
+
+CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/lem-in/lib/ft_free_arr_int.c > CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.i
+
+CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/lem-in/lib/ft_free_arr_int.c -o CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.s
+
+CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o.requires:
+
+.PHONY : CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o.requires
+
+CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o.provides: CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o.requires
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o.provides.build
+.PHONY : CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o.provides
+
+CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o.provides.build: CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o
+
+
+CMakeFiles/lem_in.dir/src/process_path.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/process_path.c.o: ../src/process_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/lem_in.dir/src/process_path.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/process_path.c.o   -c /Users/oshvorak/lem-in/src/process_path.c
+
+CMakeFiles/lem_in.dir/src/process_path.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/process_path.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/lem-in/src/process_path.c > CMakeFiles/lem_in.dir/src/process_path.c.i
+
+CMakeFiles/lem_in.dir/src/process_path.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/process_path.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/lem-in/src/process_path.c -o CMakeFiles/lem_in.dir/src/process_path.c.s
+
+CMakeFiles/lem_in.dir/src/process_path.c.o.requires:
+
+.PHONY : CMakeFiles/lem_in.dir/src/process_path.c.o.requires
+
+CMakeFiles/lem_in.dir/src/process_path.c.o.provides: CMakeFiles/lem_in.dir/src/process_path.c.o.requires
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/process_path.c.o.provides.build
+.PHONY : CMakeFiles/lem_in.dir/src/process_path.c.o.provides
+
+CMakeFiles/lem_in.dir/src/process_path.c.o.provides.build: CMakeFiles/lem_in.dir/src/process_path.c.o
+
+
 # Object files for target lem_in
 lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/lib/ft_printf/src/active_bits.c.o" \
@@ -2458,7 +2506,9 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/handle_paths.c.o" \
 "CMakeFiles/lem_in.dir/src/print_paths.c.o" \
 "CMakeFiles/lem_in.dir/src/map_join.c.o" \
-"CMakeFiles/lem_in.dir/src/free_farm.c.o"
+"CMakeFiles/lem_in.dir/src/free_farm.c.o" \
+"CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o" \
+"CMakeFiles/lem_in.dir/src/process_path.c.o"
 
 # External object files for target lem_in
 lem_in_EXTERNAL_OBJECTS =
@@ -2559,9 +2609,11 @@ lem_in: CMakeFiles/lem_in.dir/src/handle_paths.c.o
 lem_in: CMakeFiles/lem_in.dir/src/print_paths.c.o
 lem_in: CMakeFiles/lem_in.dir/src/map_join.c.o
 lem_in: CMakeFiles/lem_in.dir/src/free_farm.c.o
+lem_in: CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o
+lem_in: CMakeFiles/lem_in.dir/src/process_path.c.o
 lem_in: CMakeFiles/lem_in.dir/build.make
 lem_in: CMakeFiles/lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Linking C executable lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/lem-in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Linking C executable lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2665,6 +2717,8 @@ CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/handle_paths.c.o.requi
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/print_paths.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/map_join.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/free_farm.c.o.requires
+CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o.requires
+CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/process_path.c.o.requires
 
 .PHONY : CMakeFiles/lem_in.dir/requires
 

@@ -312,6 +312,33 @@ lib/ft_free_arr.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/lib/ft_free_arr.c.s
 .PHONY : lib/ft_free_arr.c.s
 
+lib/ft_free_arr_int.o: lib/ft_free_arr_int.c.o
+
+.PHONY : lib/ft_free_arr_int.o
+
+# target to build an object file
+lib/ft_free_arr_int.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o
+.PHONY : lib/ft_free_arr_int.c.o
+
+lib/ft_free_arr_int.i: lib/ft_free_arr_int.c.i
+
+.PHONY : lib/ft_free_arr_int.i
+
+# target to preprocess a source file
+lib/ft_free_arr_int.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.i
+.PHONY : lib/ft_free_arr_int.c.i
+
+lib/ft_free_arr_int.s: lib/ft_free_arr_int.c.s
+
+.PHONY : lib/ft_free_arr_int.s
+
+# target to generate assembly for a file
+lib/ft_free_arr_int.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.s
+.PHONY : lib/ft_free_arr_int.c.s
+
 lib/ft_isalnum.o: lib/ft_isalnum.c.o
 
 .PHONY : lib/ft_isalnum.o
@@ -2607,6 +2634,33 @@ src/print_paths.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/print_paths.c.s
 .PHONY : src/print_paths.c.s
 
+src/process_path.o: src/process_path.c.o
+
+.PHONY : src/process_path.o
+
+# target to build an object file
+src/process_path.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/process_path.c.o
+.PHONY : src/process_path.c.o
+
+src/process_path.i: src/process_path.c.i
+
+.PHONY : src/process_path.i
+
+# target to preprocess a source file
+src/process_path.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/process_path.c.i
+.PHONY : src/process_path.c.i
+
+src/process_path.s: src/process_path.c.s
+
+.PHONY : src/process_path.s
+
+# target to generate assembly for a file
+src/process_path.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/process_path.c.s
+.PHONY : src/process_path.c.s
+
 src/read_connections.o: src/read_connections.c.o
 
 .PHONY : src/read_connections.o
@@ -2745,6 +2799,9 @@ help:
 	@echo "... lib/ft_free_arr.o"
 	@echo "... lib/ft_free_arr.i"
 	@echo "... lib/ft_free_arr.s"
+	@echo "... lib/ft_free_arr_int.o"
+	@echo "... lib/ft_free_arr_int.i"
+	@echo "... lib/ft_free_arr_int.s"
 	@echo "... lib/ft_isalnum.o"
 	@echo "... lib/ft_isalnum.i"
 	@echo "... lib/ft_isalnum.s"
@@ -3000,6 +3057,9 @@ help:
 	@echo "... src/print_paths.o"
 	@echo "... src/print_paths.i"
 	@echo "... src/print_paths.s"
+	@echo "... src/process_path.o"
+	@echo "... src/process_path.i"
+	@echo "... src/process_path.s"
 	@echo "... src/read_connections.o"
 	@echo "... src/read_connections.i"
 	@echo "... src/read_connections.s"

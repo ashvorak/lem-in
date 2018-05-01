@@ -104,6 +104,9 @@
 		<Unit filename="/Users/oshvorak/lem-in/lib/ft_free_arr.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/lem-in/lib/ft_free_arr_int.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/lem-in/lib/ft_isalnum.c">
 			<Option target="lem_in"/>
 		</Unit>
@@ -366,6 +369,9 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/lem-in/src/print_paths.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/lem-in/src/process_path.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/lem-in/src/read_connections.c">

@@ -12,7 +12,7 @@
 
 #include "../inc/lem_in.h"
 
-t_room	*new_room(int id, char *name, int x, int y)
+t_room			*new_room(int id, char *name, int x, int y)
 {
 	t_room *room;
 
@@ -27,15 +27,15 @@ t_room	*new_room(int id, char *name, int x, int y)
 	return (room);
 }
 
-static void		parse_start_end(char **line, t_farm *farm, int id)
+static void		parse_start_end(char *line, t_farm *farm, int id)
 {
-	if (is_command(*line) == start && farm->start_id == -1)
+	if (is_command(line) == start && farm->start_id == -1)
 		farm->start_id = id;
-	else if (is_command(*line) == end && farm->end_id == -1)
+	else if (is_command(line) == end && farm->end_id == -1)
 		farm->end_id = id;
 }
 
-static int check_same_coor(t_farm *farm, t_room *room)
+static int		check_same_coor(t_farm *farm, t_room *room)
 {
 	t_room *tmp;
 
@@ -52,7 +52,7 @@ static int check_same_coor(t_farm *farm, t_room *room)
 void			read_rooms(int fd, t_farm *farm, char **line)
 {
 	int		id;
-	char	**arr;
+	char	**a;
 	t_room	*room;
 	t_room	*tmp;
 
@@ -61,23 +61,19 @@ void			read_rooms(int fd, t_farm *farm, char **line)
 	{
 		if (is_room(*line))
 		{
-			arr = ft_strsplit(*line, ' ');
-			room = new_room(id, ft_strdup(arr[0]), ft_atoi(arr[1]), ft_atoi(arr[2]));
+			a = ft_strsplit(*line, ' ');
+			room = new_room(id, ft_strdup(a[0]), ft_atoi(a[1]), ft_atoi(a[2]));
 			if (id++ == 0)
 				farm->head_room = room;
 			else
-			{
-				!check_same_coor(farm, room) ? ft_error() : 0;
-				tmp->next = room;
-			}
+				check_same_coor(farm, room) ? tmp->next = room : ft_error();
 			tmp = room;
-			ft_free_arr(arr);
+			ft_free_arr(a);
 		}
 		else if (is_command(*line))
-			parse_start_end(line, farm, id);
+			parse_start_end(*line, farm, id);
 		else
-			break;
+			break ;
 		map_join(farm, *line);
 	}
-	(farm->start_id == -1 || farm->end_id == -1) ? ft_error() : 0;
 }

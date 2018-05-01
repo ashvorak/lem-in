@@ -1,22 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   free_farm.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/01 14:16:54 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/01 14:17:23 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/lem_in.h"
 
-static void ft_free_arr_int(int **arr, int size)
-{
-	int i;
-
-	i = 0;
-	if (arr)
-	{
-		while (i < size)
-		{
-			free(arr[i]);
-			i++;
-		}
-		free(arr);
-	}
-}
-
-static void free_rooms(t_room *room)
+void	free_rooms(t_room *room)
 {
 	t_room *tmp;
 
@@ -29,7 +25,7 @@ static void free_rooms(t_room *room)
 	}
 }
 
-void free_farm(t_farm *farm)
+void	free_farm(t_farm *farm)
 {
 	t_path *tmp;
 	t_path *buf;
@@ -37,13 +33,14 @@ void free_farm(t_farm *farm)
 	tmp = farm->head_path;
 	ft_strdel(&farm->map);
 	ft_free_arr_int(farm->connects, farm->size);
-	ft_free_arr_int(farm->paths, farm ->size);
+	ft_free_arr_int(farm->paths, farm->size);
 	free_rooms(farm->head_room);
 	while (tmp)
 	{
-		//free_rooms(tmp->head_room);
+		free_rooms(tmp->head_room);
 		buf = tmp;
 		tmp = tmp->next;
 		free(buf);
 	}
+	free(farm);
 }

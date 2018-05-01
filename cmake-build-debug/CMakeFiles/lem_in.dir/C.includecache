@@ -46,6 +46,10 @@ libft.h
 libft.h
 /Users/oshvorak/lem-in/lib/libft.h
 
+/Users/oshvorak/lem-in/lib/ft_free_arr_int.c
+libft.h
+/Users/oshvorak/lem-in/lib/libft.h
+
 /Users/oshvorak/lem-in/lib/ft_isalnum.c
 libft.h
 /Users/oshvorak/lem-in/lib/libft.h
@@ -368,6 +372,10 @@ stdlib.h
 string.h
 -
 
+/Users/oshvorak/lem-in/src/free_farm.c
+../inc/lem_in.h
+/Users/oshvorak/lem-in/inc/lem_in.h
+
 /Users/oshvorak/lem-in/src/handle_paths.c
 ../inc/lem_in.h
 /Users/oshvorak/lem-in/inc/lem_in.h
@@ -381,6 +389,10 @@ string.h
 /Users/oshvorak/lem-in/inc/lem_in.h
 
 /Users/oshvorak/lem-in/src/print_paths.c
+../inc/lem_in.h
+/Users/oshvorak/lem-in/inc/lem_in.h
+
+/Users/oshvorak/lem-in/src/process_path.c
 ../inc/lem_in.h
 /Users/oshvorak/lem-in/inc/lem_in.h
 

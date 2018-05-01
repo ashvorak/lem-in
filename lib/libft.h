@@ -94,5 +94,6 @@ int					ft_listsize(t_list *begin_list);
 int					ft_atoi_base(const char *str, int base);
 int					ft_array_size(char **arr);
 void				ft_free_arr(char **arr);
+void				ft_free_arr_int(int **arr, int size);
 
 #endif

@@ -21,6 +21,9 @@ CMakeFiles/lem_in.dir/lib/ft_factorial.c.o: ../lib/ft_factorial.c
 CMakeFiles/lem_in.dir/lib/ft_free_arr.c.o: ../lib/ft_free_arr.c
 CMakeFiles/lem_in.dir/lib/ft_free_arr.c.o: ../lib/libft.h
 
+CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o: ../lib/ft_free_arr_int.c
+CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o: ../lib/libft.h
+
 CMakeFiles/lem_in.dir/lib/ft_isalnum.c.o: ../lib/ft_isalnum.c
 CMakeFiles/lem_in.dir/lib/ft_isalnum.c.o: ../lib/libft.h
 
@@ -269,6 +272,12 @@ CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.o: ../lib/get_next_line/
 CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.o: ../lib/get_next_line/get_next_line.h
 CMakeFiles/lem_in.dir/lib/get_next_line/get_next_line.c.o: ../lib/libft.h
 
+CMakeFiles/lem_in.dir/src/free_farm.c.o: ../inc/lem_in.h
+CMakeFiles/lem_in.dir/src/free_farm.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/lem_in.dir/src/free_farm.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/lem_in.dir/src/free_farm.c.o: ../lib/libft.h
+CMakeFiles/lem_in.dir/src/free_farm.c.o: ../src/free_farm.c
+
 CMakeFiles/lem_in.dir/src/handle_paths.c.o: ../inc/lem_in.h
 CMakeFiles/lem_in.dir/src/handle_paths.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/lem_in.dir/src/handle_paths.c.o: ../lib/get_next_line/get_next_line.h
@@ -292,6 +301,12 @@ CMakeFiles/lem_in.dir/src/print_paths.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/lem_in.dir/src/print_paths.c.o: ../lib/get_next_line/get_next_line.h
 CMakeFiles/lem_in.dir/src/print_paths.c.o: ../lib/libft.h
 CMakeFiles/lem_in.dir/src/print_paths.c.o: ../src/print_paths.c
+
+CMakeFiles/lem_in.dir/src/process_path.c.o: ../inc/lem_in.h
+CMakeFiles/lem_in.dir/src/process_path.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/lem_in.dir/src/process_path.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/lem_in.dir/src/process_path.c.o: ../lib/libft.h
+CMakeFiles/lem_in.dir/src/process_path.c.o: ../src/process_path.c
 
 CMakeFiles/lem_in.dir/src/read_connections.c.o: ../inc/lem_in.h
 CMakeFiles/lem_in.dir/src/read_connections.c.o: ../lib/ft_printf/inc/ft_printf.h

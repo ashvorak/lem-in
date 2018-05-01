@@ -62,27 +62,30 @@ typedef struct	s_farm
 	
 }				t_farm;
 
-void	ft_error(void);
+void			ft_error(void);
 
-int		is_integer(char *str);
-int		is_room(char *line);
-int		is_command(char *line);
-int		is_name(char *str, t_farm *farm);
-int		is_connection(char *line, t_farm *farm);
+int				is_integer(char *str);
+int				is_room(char *line);
+int				is_command(char *line);
+int				is_name(char *str, t_farm *farm);
+int				is_connection(char *line, t_farm *farm);
 
-void	read_rooms(int fd, t_farm *farm, char **line);
-void	read_connections(int fd, t_farm *farm, char **line);
-int		farm_size(t_farm *farm);
-int		**ret_matrix(t_farm *farm);
+void			read_rooms(int fd, t_farm *farm, char **line);
+void			read_connections(int fd, t_farm *farm, char **line);
+int				**ret_matrix(t_farm *farm);
 
-t_room	*new_room(int id, char *name, int x, int y);
+t_room			*new_room(int id, char *name, int x, int y);
+void			allocation_ants(t_farm *farm);
+t_room			*copy_room(t_room *room);
+int				find_min(t_farm *farm, int id);
+int				path_length(t_path *path);
+void			clean_connect(t_farm *farm, int id);
 
-void	wave_tracing(t_farm *farm);
-void	handle_ways(t_farm *farm);
-void	print_paths(t_farm *farm);
-void	map_join(t_farm *farm, char *line);
-void	free_farm(t_farm *farm);
-
-int		farm_size(t_farm *farm);
+void			wave_tracing(t_farm *farm);
+void			handle_path(t_farm *farm);
+void			print_paths(t_farm *farm);
+void			map_join(t_farm *farm, char *line);
+void			free_rooms(t_room *room);
+void			free_farm(t_farm *farm);
 
 #endif

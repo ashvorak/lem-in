@@ -15,14 +15,13 @@
 void			ft_error(void)
 {
 	ft_printf("ERROR\n");
-	system("leaks lem-in");
+	//free_farm(farm);
 	exit(1);
 }
 
 static	void	ft_usage(void)
 {
 	ft_printf("Usage : ./lem-in <filename>\n");
-	system("leaks lem-in");
 	exit(1);
 }
 
@@ -54,18 +53,20 @@ int				main(int ac, char **av)
 	{
 		fd = open(av[1], O_RDONLY);
 		farm = new_farm();
-		get_next_line(fd, &line) == -1 ? ft_error() : 0;
+		if (get_next_line(fd, &line) == -1)
+			ft_error();
 		is_integer(line) ? farm->ants = ft_atoi(line) : ft_error();
+		ft_strdel(&line);
 		read_rooms(fd, farm, &line);
+		(farm->start_id == -1 || farm->end_id == -1) ? ft_error() : 0;
 		read_connections(fd, farm, &line);
 		ft_printf("%s\n", farm->map);
 		wave_tracing(farm);
-		handle_ways(farm);
+		handle_path(farm);
 		print_paths(farm);
 		free_farm(farm);
 	}
 	else
 		ft_usage();
-	system("leaks lem-in");
 	return (0);
 }

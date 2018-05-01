@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   wave_tracing.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/01 14:17:13 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/01 14:17:26 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/lem_in.h"
 
 static int	fill_wt(t_farm *farm, int wt, int j)
@@ -52,7 +64,8 @@ void		wave_tracing(t_farm *farm)
 	int wt;
 
 	i = 0;
-	farm->size = farm_size(farm);
+	bool = 1;
+	wt = 2;
 	farm->paths = ret_matrix(farm);
 	while (i < farm->size)
 	{
@@ -63,8 +76,6 @@ void		wave_tracing(t_farm *farm)
 		}
 		i++;
 	}
-	wt = 2;
-	bool = 1;
 	while (bool)
 	{
 		bool = fill_path(farm, wt);

@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   read_connections.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/01 14:17:08 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/01 14:17:26 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/lem_in.h"
 
-int	farm_size(t_farm *farm)
+static int		farm_size(t_farm *farm)
 {
 	int		size;
 	t_room	*tmp;
@@ -15,9 +27,9 @@ int	farm_size(t_farm *farm)
 	return (size);
 }
 
-int	 ret_id(t_farm *farm, char *name)
+static int		ret_id(t_farm *farm, char *name)
 {
-	int 	id;
+	int		id;
 	t_room	*tmp;
 
 	id = -1;
@@ -31,54 +43,57 @@ int	 ret_id(t_farm *farm, char *name)
 	return (id);
 }
 
-int **ret_matrix(t_farm *farm)
+int				**ret_matrix(t_farm *farm)
 {
 	int i;
 	int j;
-	int size;
 	int **connects;
 
 	i = 0;
-	size = farm_size(farm);
-	if (!(connects = (int**)malloc(sizeof(int*) * size)))
+	if (!(connects = (int**)malloc(sizeof(int*) * farm->size)))
 		exit(1);
-	while (i < size)
+	while (i < farm->size)
 	{
-		if (!(connects[i] = (int*)malloc(sizeof(int) * size)))
+		if (!(connects[i] = (int*)malloc(sizeof(int) * farm->size)))
 			exit(1);
 		j = 0;
-		while (j < size)
+		while (j < farm->size)
 			connects[i][j++] = 0;
 		i++;
 	}
 	return (connects);
 }
 
-void	read_connections(int fd, t_farm *farm, char **line)
+static void		put_connect(t_farm *farm, char *line)
 {
-	int 	x;
-	int 	y;
-	int		**connects;
-	char 	**arr;
+	int		x;
+	int		y;
+	char	**arr;
 
-	connects = ret_matrix(farm);
-	do
+	if (is_connection(line, farm) || is_command(line))
 	{
-		if (is_connection(*line, farm) || is_command(*line))
+		if (is_connection(line, farm))
 		{
-			if (is_connection(*line, farm))
-			{
-				arr = ft_strsplit(*line, '-');
-				x = ret_id(farm, arr[0]);
-				y = ret_id(farm, arr[1]);
-				connects[y][x] = 1;
-				connects[x][y] = 1;
-			}
+			arr = ft_strsplit(line, '-');
+			x = ret_id(farm, arr[0]);
+			y = ret_id(farm, arr[1]);
+			farm->connects[y][x] = 1;
+			farm->connects[x][y] = 1;
+			ft_free_arr(arr);
 		}
-		else
-			ft_error();
-		map_join(farm, *line);
-	} while (get_next_line(fd, line));
-	farm->connects = connects;
+	}
+	else
+		ft_error();
 }
 
+void			read_connections(int fd, t_farm *farm, char **line)
+{
+	farm->size = farm_size(farm);
+	farm->connects = ret_matrix(farm);
+	put_connect(farm, *line);
+	while (get_next_line(fd, line))
+	{
+		put_connect(farm, *line);
+		map_join(farm, *line);
+	}
+}

@@ -114,7 +114,8 @@ LIBFT = ./lib/ft_atoi.c \
 		./lib/ft_charreplace.c \
 		./lib/ft_atoi_base.c \
 		./lib/ft_array_size.c \
-		./lib/ft_free_arr.c
+		./lib/ft_free_arr.c \
+		./lib/ft_free_arr_int.c
 
 INC = ./inc
 
