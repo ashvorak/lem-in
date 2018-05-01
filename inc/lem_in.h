@@ -34,6 +34,7 @@ typedef struct	s_room
 	int				x;
 	int				y;
 	int 			is_ant;
+	int 			ant_id;
 	struct s_room	*next;
 }				t_room;
 
@@ -51,6 +52,7 @@ typedef struct	s_path
 typedef struct	s_farm
 {
 	int		ants;
+	int		ant_id_go;
 	char	*map;
 	t_room	*head_room;
 	int 	size;

@@ -2,7 +2,7 @@
 
 void		allocation_ants(t_farm *farm)
 {
-	int 	ants;
+	int		ants;
 	t_path	*tmp;
 
 	ants = farm->ants;
@@ -55,7 +55,7 @@ void		clean_connect(t_farm *farm, int id)
 	}
 }
 
-int 		find_min(t_farm *farm, int id)
+int			find_min(t_farm *farm, int id)
 {
 	int j;
 	int min;
@@ -90,5 +90,3 @@ int			path_length(t_path *path)
 	}
 	return (size);
 }
-
-

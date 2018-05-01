@@ -24,7 +24,8 @@ SRC = ./src/main.c \
 	  ./src/handle_paths.c \
 	  ./src/wave_tracing.c \
 	  ./src/print_paths.c \
-	  ./src/free_farm.c
+	  ./src/free_farm.c \
+	  ./src/process_path.c
 
 GNL = ./lib/get_next_line/get_next_line.c
 

@@ -33,6 +33,7 @@ static t_farm	*new_farm(void)
 		return (NULL);
 	farm->map = NULL;
 	farm->ants = 0;
+	farm->ant_id_go = 1;
 	farm->head_room = NULL;
 	farm->size = 0;
 	farm->connects = NULL;
@@ -63,10 +64,12 @@ int				main(int ac, char **av)
 		ft_printf("%s\n", farm->map);
 		wave_tracing(farm);
 		handle_path(farm);
+		(farm->head_path) ? allocation_ants(farm) : ft_error();
 		print_paths(farm);
 		free_farm(farm);
 	}
 	else
 		ft_usage();
+	//system("leaks lem_in");
 	return (0);
 }

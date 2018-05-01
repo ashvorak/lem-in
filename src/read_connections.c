@@ -91,6 +91,7 @@ void			read_connections(int fd, t_farm *farm, char **line)
 	farm->size = farm_size(farm);
 	farm->connects = ret_matrix(farm);
 	put_connect(farm, *line);
+	map_join(farm, *line);
 	while (get_next_line(fd, line))
 	{
 		put_connect(farm, *line);

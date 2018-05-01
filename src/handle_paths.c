@@ -16,6 +16,8 @@ static t_path	*new_path(t_room *room)
 {
 	t_path *path;
 
+	if (!room)
+		return (NULL);
 	if (!(path = (t_path*)malloc(sizeof(t_path))))
 		return (NULL);
 	path->first_ant = 0;
@@ -37,14 +39,24 @@ static t_room	*ret_room(t_farm *farm, int id)
 	return (tmp);
 }
 
-static t_path	*make_path(t_farm *farm)
+static void		cleaning(t_farm *farm, int id_way, int id_min)
 {
-	int 	id_min;
-	int 	id_way;
+	if (id_way != farm->end_id)
+		clean_connect(farm, id_way);
+	else if (id_way == farm->end_id && id_min == farm->start_id)
+	{
+		farm->connects[farm->start_id][farm->end_id] = 0;
+		farm->connects[farm->end_id][farm->start_id] = 0;
+	}
+}
+
+static t_room	*make_path(t_farm *farm)
+{
+	int		id_min;
+	int		id_way;
 	t_room	*room;
 	t_room	*tmp;
 	t_room	*head_room;
-	t_path	*path;
 
 	id_way = farm->end_id;
 	head_room = copy_room(ret_room(farm, farm->end_id));
@@ -62,26 +74,21 @@ static t_path	*make_path(t_farm *farm)
 			tmp->next = room;
 			tmp = room;
 		}
-		if (id_way != farm->end_id)
-			clean_connect(farm, id_way);
-		else if (id_way == farm->end_id && id_min == farm->start_id)
-		{
-			farm->connects[farm->start_id][farm->end_id] = 0;
-			farm->connects[farm->end_id][farm->start_id] = 0;
-		}
+		cleaning(farm, id_way, id_min);
 		id_way = id_min;
 	}
-	path = new_path(head_room);
-	return (path);
+	return (head_room);
 }
 
-void handle_path(t_farm *farm)
+void			handle_path(t_farm *farm)
 {
-	//t_room	*tmp;
 	t_path	*buf;
 	t_path	*path;
+	t_room	*head_room;
 
-	while ((path = make_path(farm)))
+	head_room = make_path(farm);
+	path = new_path(head_room);
+	while (path)
 	{
 		if (!farm->head_path)
 		{
@@ -96,22 +103,7 @@ void handle_path(t_farm *farm)
 		path->length = path_length(path);
 		ft_free_arr_int(farm->paths, farm->size);
 		wave_tracing(farm);
+		head_room = make_path(farm);
+		path = new_path(head_room);
 	}
-	(farm->head_path) ? allocation_ants(farm) : ft_error();
-	//buf = farm->head_path;
-	/*
-	while (buf)
-		{
-			tmp = buf->head_room;
-			while (tmp)
-			{
-				ft_printf("%s ", tmp->name);
-				tmp = tmp->next;
-			}
-			ft_printf("\nlen %d\n", buf->length);
-			ft_printf("number %d\n", buf->ants);
-			ft_printf("--------------------\n");
-			buf = buf->next;
-	}
-	 */
 }
