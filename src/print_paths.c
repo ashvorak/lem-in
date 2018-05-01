@@ -12,23 +12,23 @@
 
 #include "../inc/lem_in.h"
 
-static int	move(t_path *path, t_farm *farm, int ant_num)
+static int	move(t_path *path, t_farm *farm)
 {
 	int		ant;
 	t_room	*tmp;
 
 	ant = path->first_ant + path->ants_finish;
 	tmp = path->head_room;
-	ant_num -= path->ants - path->ants_finish;
 	if (path->ants != path->ants_finish)
 	{
 		while (tmp->next)
 		{
 			if (tmp->next->is_ant)
 			{
-				ft_printf("L%d-%s ", ant_num++, tmp->name);
 				tmp->is_ant = 1;
 				tmp->next->is_ant = 0;
+				tmp->ant_id = tmp->next->ant_id;
+				ft_printf("L%d-%s ", tmp->ant_id, tmp->name);
 				(tmp->id == farm->end_id) ? path->ants_finish++ : 0;
 				ant++;
 			}
@@ -36,9 +36,9 @@ static int	move(t_path *path, t_farm *farm, int ant_num)
 		}
 		if (path->ants_go != path->ants)
 		{
-			ft_printf("L%d-%s ", ant_num, tmp->name);
+			ft_printf("L%d-%s ", farm->ant_id_go, tmp->name);
 			path->ants_go++;
-			farm->ant_id_go++;
+			tmp->ant_id = farm->ant_id_go++;
 			tmp->is_ant = 1;
 			(path->length == 1) ? path->ants_finish++ : 0;
 		}
@@ -49,7 +49,6 @@ static int	move(t_path *path, t_farm *farm, int ant_num)
 void		print_paths(t_farm *farm)
 {
 	int		ants_finish;
-	int		ant_num;
 	t_path	*tmp;
 
 	ants_finish = 0;
@@ -57,11 +56,9 @@ void		print_paths(t_farm *farm)
 	{
 		ants_finish = 0;
 		tmp = farm->head_path;
-		ant_num = 1;
 		while (tmp)
 		{
-			ant_num += tmp->ants;
-			ants_finish += move(tmp, farm, ant_num);
+			ants_finish += move(tmp, farm);
 			tmp = tmp->next;
 		}
 		ft_printf("\n");
