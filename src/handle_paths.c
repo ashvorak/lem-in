@@ -39,7 +39,7 @@ static t_room	*ret_room(t_farm *farm, int id)
 	return (tmp);
 }
 
-static void		cleaning(t_farm *farm, int id_way, int id_min)
+static int		cleaning(t_farm *farm, int id_way, int id_min)
 {
 	if (id_way != farm->end_id)
 		clean_connect(farm, id_way);
@@ -48,6 +48,7 @@ static void		cleaning(t_farm *farm, int id_way, int id_min)
 		farm->connects[farm->start_id][farm->end_id] = 0;
 		farm->connects[farm->end_id][farm->start_id] = 0;
 	}
+	return (id_min);
 }
 
 static t_room	*make_path(t_farm *farm)
@@ -74,8 +75,7 @@ static t_room	*make_path(t_farm *farm)
 			tmp->next = room;
 			tmp = room;
 		}
-		cleaning(farm, id_way, id_min);
-		id_way = id_min;
+		id_way = cleaning(farm, id_way, id_min);
 	}
 	return (head_room);
 }

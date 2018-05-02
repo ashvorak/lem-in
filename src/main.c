@@ -61,7 +61,7 @@ int				main(int ac, char **av)
 		read_rooms(fd, farm, &line);
 		(farm->start_id == -1 || farm->end_id == -1) ? ft_error() : 0;
 		read_connections(fd, farm, &line);
-		ft_printf("%s\n", farm->map);
+		ft_printf("%d\n%s\n",farm->ants, farm->map);
 		wave_tracing(farm);
 		handle_path(farm);
 		(farm->head_path) ? allocation_ants(farm) : ft_error();
