@@ -27,6 +27,13 @@ typedef enum	e_comment
 	end
 }				t_comment;
 
+typedef enum	e_flag
+{
+	path = 1,
+	algo
+}				t_flag;
+
+
 typedef struct	s_room
 {
 	int				id;
@@ -40,7 +47,6 @@ typedef struct	s_room
 
 typedef struct	s_path
 {
-	int 			first_ant;
 	int 			ants;
 	int 			ants_go;
 	int 			ants_finish;
@@ -61,6 +67,7 @@ typedef struct	s_farm
 	t_path	*head_path;
 	int		start_id;
 	int		end_id;
+	int 	algo_len;
 	
 }				t_farm;
 
@@ -82,6 +89,7 @@ t_room			*copy_room(t_room *room);
 int				find_min(t_farm *farm, int id);
 int				path_length(t_path *path);
 void			clean_connect(t_farm *farm, int id);
+t_room			*ret_room(t_farm *farm, int id);
 
 void			wave_tracing(t_farm *farm);
 void			handle_path(t_farm *farm);
@@ -89,5 +97,7 @@ void			print_paths(t_farm *farm);
 void			map_join(t_farm *farm, char *line);
 void			free_rooms(t_room *room);
 void			free_farm(t_farm *farm);
+
+void			handle_flags(t_farm *farm, char **av, t_flag flag);
 
 #endif

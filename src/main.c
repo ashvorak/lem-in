@@ -15,13 +15,14 @@
 void			ft_error(void)
 {
 	ft_printf("ERROR\n");
-	//free_farm(farm);
+	system("leaks lem-in");
 	exit(1);
 }
 
 static	void	ft_usage(void)
 {
 	ft_printf("Usage : ./lem-in <filename>\n");
+	system("leaks lem-in");
 	exit(1);
 }
 
@@ -41,6 +42,7 @@ static t_farm	*new_farm(void)
 	farm->head_path = NULL;
 	farm->start_id = -1;
 	farm->end_id = -1;
+	farm->algo_len = 0;
 	return (farm);
 }
 
@@ -50,9 +52,9 @@ int				main(int ac, char **av)
 	char	*line;
 	t_farm	*farm;
 
-	if (ac == 2)
+	if (ac > 1 && ac < 6)
 	{
-		fd = open(av[1], O_RDONLY);
+		fd = open(av[ac - 1], O_RDONLY);
 		farm = new_farm();
 		if (get_next_line(fd, &line) == -1)
 			ft_error();
@@ -61,15 +63,14 @@ int				main(int ac, char **av)
 		read_rooms(fd, farm, &line);
 		(farm->start_id == -1 || farm->end_id == -1) ? ft_error() : 0;
 		read_connections(fd, farm, &line);
-		ft_printf("%d\n%s\n",farm->ants, farm->map);
-		wave_tracing(farm);
 		handle_path(farm);
-		(farm->head_path) ? allocation_ants(farm) : ft_error();
+		handle_flags(farm, av, path);
 		print_paths(farm);
 		free_farm(farm);
+		handle_flags(farm, av, algo);
 	}
 	else
 		ft_usage();
-	//system("leaks lem_in");
+	system("leaks lem-in");
 	return (0);
 }

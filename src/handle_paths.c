@@ -20,7 +20,6 @@ static t_path	*new_path(t_room *room)
 		return (NULL);
 	if (!(path = (t_path*)malloc(sizeof(t_path))))
 		return (NULL);
-	path->first_ant = 0;
 	path->ants = 0;
 	path->ants_go = 0;
 	path->ants_finish = 0;
@@ -29,7 +28,7 @@ static t_path	*new_path(t_room *room)
 	return (path);
 }
 
-static t_room	*ret_room(t_farm *farm, int id)
+t_room			*ret_room(t_farm *farm, int id)
 {
 	t_room *tmp;
 
@@ -91,19 +90,15 @@ void			handle_path(t_farm *farm)
 	while (path)
 	{
 		if (!farm->head_path)
-		{
 			farm->head_path = path;
-			buf = path;
-		}
 		else
-		{
 			buf->next = path;
-			buf = path;
-		}
+		buf = path;
 		path->length = path_length(path);
 		ft_free_arr_int(farm->paths, farm->size);
 		wave_tracing(farm);
 		head_room = make_path(farm);
 		path = new_path(head_room);
 	}
+	(farm->head_path) ? allocation_ants(farm) : ft_error();
 }

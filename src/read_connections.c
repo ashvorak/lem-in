@@ -97,4 +97,6 @@ void			read_connections(int fd, t_farm *farm, char **line)
 		put_connect(farm, *line);
 		map_join(farm, *line);
 	}
+	ft_printf("%d\n%s\n", farm->ants, farm->map);
+	wave_tracing(farm);
 }

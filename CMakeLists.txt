@@ -97,4 +97,4 @@ add_executable(lem_in
         lib/libft.h
         src/main.c
         src/read_rooms.c
-        src/valid.c src/read_connections.c src/wave_tracing.c src/handle_paths.c src/print_paths.c src/map_join.c src/free_farm.c lib/ft_free_arr_int.c src/process_path.c)
+        src/valid.c src/read_connections.c src/wave_tracing.c src/handle_paths.c src/print_paths.c src/map_join.c src/free_farm.c lib/ft_free_arr_int.c src/process_path.c src/handle_flags.c)

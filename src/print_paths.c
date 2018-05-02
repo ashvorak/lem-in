@@ -96,6 +96,7 @@ void		print_paths(t_farm *farm)
 			tmp = tmp->next;
 		}
 		print_move(farm);
+		farm->algo_len++;
 		ft_printf("\n");
 	}
 }

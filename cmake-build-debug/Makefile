@@ -2526,6 +2526,33 @@ src/free_farm.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/free_farm.c.s
 .PHONY : src/free_farm.c.s
 
+src/handle_flags.o: src/handle_flags.c.o
+
+.PHONY : src/handle_flags.o
+
+# target to build an object file
+src/handle_flags.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_flags.c.o
+.PHONY : src/handle_flags.c.o
+
+src/handle_flags.i: src/handle_flags.c.i
+
+.PHONY : src/handle_flags.i
+
+# target to preprocess a source file
+src/handle_flags.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_flags.c.i
+.PHONY : src/handle_flags.c.i
+
+src/handle_flags.s: src/handle_flags.c.s
+
+.PHONY : src/handle_flags.s
+
+# target to generate assembly for a file
+src/handle_flags.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_flags.c.s
+.PHONY : src/handle_flags.c.s
+
 src/handle_paths.o: src/handle_paths.c.o
 
 .PHONY : src/handle_paths.o
@@ -3045,6 +3072,9 @@ help:
 	@echo "... src/free_farm.o"
 	@echo "... src/free_farm.i"
 	@echo "... src/free_farm.s"
+	@echo "... src/handle_flags.o"
+	@echo "... src/handle_flags.i"
+	@echo "... src/handle_flags.s"
 	@echo "... src/handle_paths.o"
 	@echo "... src/handle_paths.i"
 	@echo "... src/handle_paths.s"

@@ -376,6 +376,10 @@ string.h
 ../inc/lem_in.h
 /Users/oshvorak/lem-in/inc/lem_in.h
 
+/Users/oshvorak/lem-in/src/handle_flags.c
+../inc/lem_in.h
+/Users/oshvorak/lem-in/inc/lem_in.h
+
 /Users/oshvorak/lem-in/src/handle_paths.c
 ../inc/lem_in.h
 /Users/oshvorak/lem-in/inc/lem_in.h

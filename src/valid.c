@@ -33,9 +33,15 @@ int	is_room(char *line)
 	while (arr[i])
 	{
 		if (!is_integer(arr[i]) && i != 0)
+		{
+			ft_free_arr(arr);
 			return (0);
-		else if (i == 0 && arr[i][0] == 'L')
+		}
+		else if (i == 0 && (arr[i][0] == 'L' || arr[i][0] == '#'))
+		{
+			ft_free_arr(arr);
 			return (0);
+		}
 		i++;
 	}
 	ft_free_arr(arr);

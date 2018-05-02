@@ -97,6 +97,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/free_farm.c.o"
   "CMakeFiles/lem_in.dir/lib/ft_free_arr_int.c.o"
   "CMakeFiles/lem_in.dir/src/process_path.c.o"
+  "CMakeFiles/lem_in.dir/src/handle_flags.c.o"
   "lem_in.pdb"
   "lem_in"
 )
