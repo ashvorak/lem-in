@@ -23,7 +23,7 @@ void		allocation_ants(t_farm *farm)
 	{
 		while (tmp->next)
 		{
-			if (tmp->length + tmp->ants < tmp->next->length + tmp->next->ants)
+			if (tmp->length + tmp->ants <= tmp->next->length + tmp->next->ants)
 			{
 				tmp->ants++;
 				break ;

@@ -86,17 +86,17 @@ static void		put_connect(t_farm *farm, char *line)
 		ft_error();
 }
 
-void			read_connections(int fd, t_farm *farm, char **line)
+void			read_connections(t_farm *farm, char **line)
 {
 	farm->size = farm_size(farm);
 	farm->connects = ret_matrix(farm);
 	put_connect(farm, *line);
 	map_join(farm, *line);
-	while (get_next_line(fd, line))
+	while (get_next_line(farm->in, line))
 	{
 		put_connect(farm, *line);
 		map_join(farm, *line);
 	}
-	ft_printf("%d\n%s\n", farm->ants, farm->map);
+	ft_printf("{fd}%d\n%s\n", farm->out, farm->ants, farm->map);
 	wave_tracing(farm);
 }

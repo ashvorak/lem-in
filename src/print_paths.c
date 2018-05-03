@@ -41,7 +41,7 @@ static int	move(t_path *path, t_farm *farm)
 	return (path->ants_finish);
 }
 
-static void	print_room(t_path *tmp, int id, int end_id)
+static void	print_room(t_farm *farm, t_path *tmp, int id, int end_id)
 {
 	t_room *room;
 
@@ -52,7 +52,10 @@ static void	print_room(t_path *tmp, int id, int end_id)
 		{
 			if (room->is_ant && room->ant_id == id)
 			{
-				ft_printf("L%d-%s ", room->ant_id, room->name);
+				//(!farm->color) ? ft_printf("{fd}L%d-%s ", farm->out, room->ant_id, room->name) \
+				//: ft_printf("{fd}{blue}L%d-{red}%s{eoc} ", farm->out, room->ant_id, room->name);
+				ft_printf("{fd}L%d-%s ", farm->out, room->ant_id, room->name);
+				farm->iter_len++;
 				if (room->id == end_id)
 				{
 					room->is_ant = 0;
@@ -75,7 +78,7 @@ static void	print_move(t_farm *farm)
 	while (i < farm->ant_id_go)
 	{
 		tmp = farm->head_path;
-		print_room(tmp, i, farm->end_id);
+		print_room(farm, tmp, i, farm->end_id);
 		i++;
 	}
 }
@@ -97,6 +100,6 @@ void		print_paths(t_farm *farm)
 		}
 		print_move(farm);
 		farm->algo_len++;
-		ft_printf("\n");
+		ft_printf("{fd}\n", farm->out);
 	}
 }

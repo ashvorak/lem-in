@@ -50,7 +50,7 @@ static int		check_same_coor(t_farm *farm, t_room *room)
 	return (1);
 }
 
-void			read_rooms(int fd, t_farm *farm, char **line)
+void			read_rooms(t_farm *farm, char **line)
 {
 	int		id;
 	char	**a;
@@ -58,7 +58,7 @@ void			read_rooms(int fd, t_farm *farm, char **line)
 	t_room	*tmp;
 
 	id = 0;
-	while (get_next_line(fd, line))
+	while (get_next_line(farm->in, line))
 	{
 		if (is_room(*line))
 		{

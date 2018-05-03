@@ -1,0 +1,19 @@
+5
+##start
+0 1 2
+##end
+1 2 2
+0-1
+
+PATHS:
+1<-0 [length: 1, ants: 5]
+
+L1-1 
+L2-1 
+L3-1 
+L4-1 
+L5-1 
+
+Iteration number: = 5
+
+Algorithm length: = 5

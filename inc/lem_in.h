@@ -27,13 +27,6 @@ typedef enum	e_comment
 	end
 }				t_comment;
 
-typedef enum	e_flag
-{
-	path = 1,
-	algo
-}				t_flag;
-
-
 typedef struct	s_room
 {
 	int				id;
@@ -68,10 +61,14 @@ typedef struct	s_farm
 	int		start_id;
 	int		end_id;
 	int 	algo_len;
-	
+	int 	iter_len;
+	int 	color;
+	int 	in;
+	int 	out;
 }				t_farm;
 
 void			ft_error(void);
+void			ft_usage(void);
 
 int				is_integer(char *str);
 int				is_room(char *line);
@@ -79,8 +76,8 @@ int				is_command(char *line);
 int				is_name(char *str, t_farm *farm);
 int				is_connection(char *line, t_farm *farm);
 
-void			read_rooms(int fd, t_farm *farm, char **line);
-void			read_connections(int fd, t_farm *farm, char **line);
+void			read_rooms(t_farm *farm, char **line);
+void			read_connections(t_farm *farm, char **line);
 int				**ret_matrix(t_farm *farm);
 
 t_room			*new_room(int id, char *name, int x, int y);
@@ -98,6 +95,9 @@ void			map_join(t_farm *farm, char *line);
 void			free_rooms(t_room *room);
 void			free_farm(t_farm *farm);
 
-void			handle_flags(t_farm *farm, char **av, t_flag flag);
+int				handle_flags_before(t_farm *farm, int ac, char **av);
+int				handle_flags_after(t_farm *farm, int ac, char **av);
+void			handle_input_output(t_farm *farm, int ac, char **av);
+int				valid_flags(int ac, char **av);
 
 #endif
