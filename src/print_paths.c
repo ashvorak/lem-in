@@ -52,9 +52,8 @@ static void	print_room(t_farm *farm, t_path *tmp, int id, int end_id)
 		{
 			if (room->is_ant && room->ant_id == id)
 			{
-				//(!farm->color) ? ft_printf("{fd}L%d-%s ", farm->out, room->ant_id, room->name) \
-				//: ft_printf("{fd}{blue}L%d-{red}%s{eoc} ", farm->out, room->ant_id, room->name);
-				ft_printf("{fd}L%d-%s ", farm->out, room->ant_id, room->name);
+				(!farm->color) ? ft_printf("{fd}L%d-%s ", farm->out, room->ant_id, room->name) \
+				: ft_printf("{fd}{blue}L%d-{red}%s{eoc} ", farm->out, room->ant_id, room->name);
 				farm->iter_len++;
 				if (room->id == end_id)
 				{
