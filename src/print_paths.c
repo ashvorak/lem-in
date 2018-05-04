@@ -44,21 +44,21 @@ static int	move(t_path *path, t_farm *farm)
 static void	print_ans(t_farm *farm, t_room *room)
 {
 	if (!farm->color || farm->out != 1)
-		ft_printf("{fd}L%d-%s ", farm->out, room->ant_id, room->name);
+		ft_printf("{fd}L%d-%s", farm->out, room->ant_id, room->name);
 	else
 	{
 		if (room->id == farm->end_id)
-			ft_printf("{fd}{green}L%d{eoc}-{blue}%s{eoc} ",\
+			ft_printf("{fd}{green}L%d{eoc}-%s",\
 			farm->out, room->ant_id, room->name);
 		else
-			ft_printf("{fd}{red}L%d{eoc}-{blue}%s{eoc} ",\
+			ft_printf("{fd}{red}L%d{eoc}-%s",\
 			farm->out, room->ant_id, room->name);
 	}
 }
 
-static void	print_room(t_farm *farm, t_path *tmp, int id, int end_id)
+static int	print_room(t_farm *farm, t_path *tmp, int id, int end_id)
 {
-	t_room *room;
+	t_room	*room;
 
 	while (tmp)
 	{
@@ -74,24 +74,28 @@ static void	print_room(t_farm *farm, t_path *tmp, int id, int end_id)
 					room->is_ant = 0;
 					room->ant_id = 0;
 				}
-				return ;
+				return (1);
 			}
 			room = room->next;
 		}
 		tmp = tmp->next;
 	}
+	return (0);
 }
 
 static void	print_move(t_farm *farm)
 {
 	int		i;
+	int		bool;
 	t_path	*tmp;
 
 	i = 1;
+	bool = 1;
 	while (i < farm->ant_id_go)
 	{
+		(i != 1 && bool) ? ft_printf("{fd} ", farm->out) : 0;
 		tmp = farm->head_path;
-		print_room(farm, tmp, i, farm->end_id);
+		bool = print_room(farm, tmp, i, farm->end_id);
 		i++;
 	}
 }

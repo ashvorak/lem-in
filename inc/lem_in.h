@@ -33,17 +33,17 @@ typedef struct	s_room
 	char			*name;
 	int				x;
 	int				y;
-	int 			is_ant;
-	int 			ant_id;
+	int				is_ant;
+	int				ant_id;
 	struct s_room	*next;
 }				t_room;
 
 typedef struct	s_path
 {
-	int 			ants;
-	int 			ants_go;
-	int 			ants_finish;
-	int 			length;
+	int				ants;
+	int				ants_go;
+	int				ants_finish;
+	int				length;
 	t_room			*head_room;
 	struct s_path	*next;
 }				t_path;
@@ -54,17 +54,17 @@ typedef struct	s_farm
 	int		ant_id_go;
 	char	*map;
 	t_room	*head_room;
-	int 	size;
+	int		size;
 	int		**connects;
-	int 	**paths;
+	int		**paths;
 	t_path	*head_path;
 	int		start_id;
 	int		end_id;
-	int 	algo_len;
-	int 	iter_len;
-	int 	color;
-	int 	in;
-	int 	out;
+	int		algo_len;
+	int		iter_len;
+	int		color;
+	int		in;
+	int		out;
 }				t_farm;
 
 void			ft_error(void);

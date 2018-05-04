@@ -21,6 +21,12 @@ void			ft_error(void)
 void			ft_usage(void)
 {
 	ft_printf("Usage : ./lem-in <filename>\n");
+	ft_printf("       -p - print paths\n");
+	ft_printf("       -l - print alrorithm length\n");
+	ft_printf("       -i - print number of iterations\n");
+	ft_printf("       -c - print with colors\n");
+	ft_printf("       -f - input from file [./lem-in -f [file_path]]\n");
+	ft_printf("       -o - output from file [./lem-in -o [file_path]]\n");
 	exit(1);
 }
 
@@ -61,9 +67,11 @@ int				main(int ac, char **av)
 	is_integer(line) ? farm->ants = ft_atoi(line) : ft_error();
 	ft_strdel(&line);
 	read_rooms(farm, &line);
-	(farm->start_id == -1 || farm->end_id == -1) ? ft_error() : 0;
+	(farm->start_id == -1 || farm->end_id == -1 || \
+	farm->ants == 0) ? ft_error() : 0;
 	read_connections(farm, &line);
 	handle_path(farm);
+	ft_printf("{fd}%d\n%s\n", farm->out, farm->ants, farm->map);
 	handle_flags_before(farm, ac, av);
 	print_paths(farm);
 	handle_flags_after(farm, ac, av);

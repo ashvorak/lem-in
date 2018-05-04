@@ -34,7 +34,7 @@ FT_PRINTF = ./ft_printf/src/active_bits.c \
 
 GNL = ./get_next_line/get_next_line.c
 
-SRC = 	ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
+LIBFT = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 		ft_isdigit.c ft_isprint.c ft_itoa.c ft_lstadd.c ft_lstdel.c ft_lstdelone.c \
 		ft_lstiter.c ft_lstmap.c ft_lstnew.c ft_memalloc.c ft_memccpy.c ft_memchr.c \
 		ft_memcmp.c ft_memcpy.c ft_memdel.c ft_memmove.c ft_memset.c ft_putchar.c \
@@ -47,25 +47,22 @@ SRC = 	ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 		ft_swap.c ft_sqrt.c ft_strcapitalize.c ft_factorial.c ft_listsize.c ft_charreplace.c \
 		ft_atoi_base.c ft_free_arr.c ft_array_size.c ft_free_arr_int.c
 
-OSRC = $(patsubst %.c, %.o, $(SRC))
+LIBFT_OBJ = $(LIBFT:.c=.o)
 
-OFT_PRINTF = $(patsubst %.c, %.o, $(FT_PRINTF))
+FT_PRINTF_OBJ = $(FT_PRINTF:.c=.o)
 
-OGNL = $(patsubst %.c, %.o, $(GNL))
+GNL_OBJ = $(GNL:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OSRC)
-	ar cr $(NAME) $(OSRC) $(OFT_PRINTF) $(OGNL)
+$(NAME): $(FT_PRINTF_OBJ) $(LIBFT_OBJ) $(GNL_OBJ)
+	ar rc $(NAME) $(FT_PRINTF_OBJ) $(LIBFT_OBJ) $(GNL_OBJ)
 	ranlib $(NAME)
 
-%.o : %.c
-	gcc -c -Wall -Wextra -Werror $<
-
 clean:
-	rm -f $(OSRC) *.gch
+	/bin/rm -f $(FT_PRINTF_OBJ) $(LIBFT_OBJ) $(GNL_OBJ)
 
-fclean: clean
-	rm -f $(NAME)
+fclean:	clean
+	/bin/rm -f $(NAME)
 
 re: fclean all

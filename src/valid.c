@@ -14,11 +14,14 @@
 
 int	is_integer(char *str)
 {
-	while (*str)
+	int i;
+
+	i = 0;
+	while (str[i])
 	{
-		if (!ft_isdigit(*str))
+		if (!ft_isdigit(str[i]))
 			return (0);
-		str++;
+		i++;
 	}
 	return (1);
 }
@@ -52,9 +55,9 @@ int	is_command(char *line)
 {
 	if (line[0] == '#')
 	{
-		if (ft_strstr(line, "##start"))
+		if (!ft_strcmp(line, "##start"))
 			return (start);
-		else if (ft_strstr(line, "##end"))
+		else if (!ft_strcmp(line, "##end"))
 			return (end);
 		else
 			return (comment);

@@ -90,6 +90,7 @@ void			read_connections(t_farm *farm, char **line)
 {
 	farm->size = farm_size(farm);
 	farm->connects = ret_matrix(farm);
+	(!*line) ? ft_error() : 0;
 	put_connect(farm, *line);
 	map_join(farm, *line);
 	while (get_next_line(farm->in, line))
@@ -97,6 +98,5 @@ void			read_connections(t_farm *farm, char **line)
 		put_connect(farm, *line);
 		map_join(farm, *line);
 	}
-	ft_printf("{fd}%d\n%s\n", farm->out, farm->ants, farm->map);
 	wave_tracing(farm);
 }

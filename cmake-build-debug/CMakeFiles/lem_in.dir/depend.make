@@ -284,6 +284,12 @@ CMakeFiles/lem_in.dir/src/handle_flags.c.o: ../lib/get_next_line/get_next_line.h
 CMakeFiles/lem_in.dir/src/handle_flags.c.o: ../lib/libft.h
 CMakeFiles/lem_in.dir/src/handle_flags.c.o: ../src/handle_flags.c
 
+CMakeFiles/lem_in.dir/src/handle_input_output.c.o: ../inc/lem_in.h
+CMakeFiles/lem_in.dir/src/handle_input_output.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/lem_in.dir/src/handle_input_output.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/lem_in.dir/src/handle_input_output.c.o: ../lib/libft.h
+CMakeFiles/lem_in.dir/src/handle_input_output.c.o: ../src/handle_input_output.c
+
 CMakeFiles/lem_in.dir/src/handle_paths.c.o: ../inc/lem_in.h
 CMakeFiles/lem_in.dir/src/handle_paths.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/lem_in.dir/src/handle_paths.c.o: ../lib/get_next_line/get_next_line.h

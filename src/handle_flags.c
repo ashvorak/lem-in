@@ -80,7 +80,7 @@ int				handle_flags_after(t_farm *farm, int ac, char **av)
 	while (i < ac)
 	{
 		if (!ft_strcmp(av[i], "-i"))
-			ft_printf("{fd}\nIteration number: = %d\n", \
+			ft_printf("{fd}\nNumber of iterations: = %d\n", \
 			farm->out, farm->iter_len);
 		else if (!ft_strcmp(av[i], "-l"))
 			ft_printf("{fd}\nAlgorithm length: = %d\n", \
