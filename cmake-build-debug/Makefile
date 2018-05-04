@@ -2553,6 +2553,33 @@ src/handle_flags.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_flags.c.s
 .PHONY : src/handle_flags.c.s
 
+src/handle_input_output.o: src/handle_input_output.c.o
+
+.PHONY : src/handle_input_output.o
+
+# target to build an object file
+src/handle_input_output.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_input_output.c.o
+.PHONY : src/handle_input_output.c.o
+
+src/handle_input_output.i: src/handle_input_output.c.i
+
+.PHONY : src/handle_input_output.i
+
+# target to preprocess a source file
+src/handle_input_output.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_input_output.c.i
+.PHONY : src/handle_input_output.c.i
+
+src/handle_input_output.s: src/handle_input_output.c.s
+
+.PHONY : src/handle_input_output.s
+
+# target to generate assembly for a file
+src/handle_input_output.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/handle_input_output.c.s
+.PHONY : src/handle_input_output.c.s
+
 src/handle_paths.o: src/handle_paths.c.o
 
 .PHONY : src/handle_paths.o
@@ -3075,6 +3102,9 @@ help:
 	@echo "... src/handle_flags.o"
 	@echo "... src/handle_flags.i"
 	@echo "... src/handle_flags.s"
+	@echo "... src/handle_input_output.o"
+	@echo "... src/handle_input_output.i"
+	@echo "... src/handle_input_output.s"
 	@echo "... src/handle_paths.o"
 	@echo "... src/handle_paths.i"
 	@echo "... src/handle_paths.s"

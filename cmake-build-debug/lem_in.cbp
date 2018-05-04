@@ -362,6 +362,9 @@
 		<Unit filename="/Users/oshvorak/lem-in/src/handle_flags.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/lem-in/src/handle_input_output.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/lem-in/src/handle_paths.c">
 			<Option target="lem_in"/>
 		</Unit>

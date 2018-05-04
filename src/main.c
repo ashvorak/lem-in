@@ -15,14 +15,12 @@
 void			ft_error(void)
 {
 	ft_printf("ERROR\n");
-	//system("leaks lem-in");
 	exit(1);
 }
 
 void			ft_usage(void)
 {
 	ft_printf("Usage : ./lem-in <filename>\n");
-	//system("leaks lem-in");
 	exit(1);
 }
 
@@ -46,7 +44,7 @@ static t_farm	*new_farm(void)
 	farm->iter_len = 0;
 	farm->color = 0;
 	farm->in = 0;
-	farm->out = 0;
+	farm->out = 1;
 	return (farm);
 }
 
@@ -57,7 +55,7 @@ int				main(int ac, char **av)
 
 	farm = new_farm();
 	handle_input_output(farm, ac, av);
-	valid_flags( ac, av);
+	valid_flags(ac, av);
 	if (get_next_line(farm->in, &line) == -1)
 		ft_error();
 	is_integer(line) ? farm->ants = ft_atoi(line) : ft_error();
@@ -70,6 +68,5 @@ int				main(int ac, char **av)
 	print_paths(farm);
 	handle_flags_after(farm, ac, av);
 	free_farm(farm);
-	//system("leaks lem_in");
 	return (0);
 }

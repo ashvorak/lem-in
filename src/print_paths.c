@@ -41,6 +41,21 @@ static int	move(t_path *path, t_farm *farm)
 	return (path->ants_finish);
 }
 
+static void	print_ans(t_farm *farm, t_room *room)
+{
+	if (!farm->color || farm->out != 1)
+		ft_printf("{fd}L%d-%s ", farm->out, room->ant_id, room->name);
+	else
+	{
+		if (room->id == farm->end_id)
+			ft_printf("{fd}{green}L%d{eoc}-{blue}%s{eoc} ",\
+			farm->out, room->ant_id, room->name);
+		else
+			ft_printf("{fd}{red}L%d{eoc}-{blue}%s{eoc} ",\
+			farm->out, room->ant_id, room->name);
+	}
+}
+
 static void	print_room(t_farm *farm, t_path *tmp, int id, int end_id)
 {
 	t_room *room;
@@ -52,8 +67,7 @@ static void	print_room(t_farm *farm, t_path *tmp, int id, int end_id)
 		{
 			if (room->is_ant && room->ant_id == id)
 			{
-				(!farm->color) ? ft_printf("{fd}L%d-%s ", farm->out, room->ant_id, room->name) \
-				: ft_printf("{fd}{blue}L%d-{red}%s{eoc} ", farm->out, room->ant_id, room->name);
+				print_ans(farm, room);
 				farm->iter_len++;
 				if (room->id == end_id)
 				{

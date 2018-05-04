@@ -10,7 +10,29 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME = libftprintf.a
+
+FT_PRINTF = ./ft_printf/src/active_bits.c \
+			./ft_printf/src/convert_base.c \
+			./ft_printf/src/convert_int.c \
+			./ft_printf/src/convert_float.c \
+			./ft_printf/src/ft_printf.c \
+			./ft_printf/src/ft_putwchar.c \
+			./ft_printf/src/handle_char.c \
+			./ft_printf/src/handle_n.c \
+			./ft_printf/src/handle_num.c \
+			./ft_printf/src/handle_float.c \
+			./ft_printf/src/handle_str.c \
+			./ft_printf/src/handle_qualifier.c \
+			./ft_printf/src/handle_value.c \
+			./ft_printf/src/handle_wchar.c \
+			./ft_printf/src/handle_wstr.c \
+			./ft_printf/src/is_type.c \
+			./ft_printf/src/ft_realloc.c \
+			./ft_printf/src/make_colors.c \
+			./ft_printf/src/size_char.c
+
+GNL = ./get_next_line/get_next_line.c
 
 SRC = 	ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 		ft_isdigit.c ft_isprint.c ft_itoa.c ft_lstadd.c ft_lstdel.c ft_lstdelone.c \
@@ -27,10 +49,14 @@ SRC = 	ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 
 OSRC = $(patsubst %.c, %.o, $(SRC))
 
+OFT_PRINTF = $(patsubst %.c, %.o, $(FT_PRINTF))
+
+OGNL = $(patsubst %.c, %.o, $(GNL))
+
 all: $(NAME)
-	
+
 $(NAME): $(OSRC)
-	ar cr $(NAME) $(OSRC)
+	ar cr $(NAME) $(OSRC) $(OFT_PRINTF) $(OGNL)
 	ranlib $(NAME)
 
 %.o : %.c

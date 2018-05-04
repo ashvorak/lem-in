@@ -99,5 +99,6 @@ int				handle_flags_before(t_farm *farm, int ac, char **av);
 int				handle_flags_after(t_farm *farm, int ac, char **av);
 void			handle_input_output(t_farm *farm, int ac, char **av);
 int				valid_flags(int ac, char **av);
+void			handle_input_output(t_farm *farm, int ac, char **av);
 
 #endif
